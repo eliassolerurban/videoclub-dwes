@@ -2,33 +2,33 @@
 
 include_once("Soporte.php");
 
-class CintaVideo extends Soporte{
+class Dvd extends Soporte{
+
+    public array $idiomas;
 
     public function __construct(
 
         string $titulo,
         string $numero,
         float $precio,
-        private int $duracion
-
-    ) {
-        
+        private string $formaPantalla,
+    
+    )
+    {
+     
         parent::__construct($titulo, $numero, $precio);
-
+        $idiomas = [];
     }
-    
-    
+
     public function muestraResumen(){
-        
+
         echo "<br>";
-        echo "Película en VHS: <br>";
+        echo "Película en DVD: <br>";
         parent::muestraResumen();
-        echo "<br>";
-        echo "Duración: " . $this->duracion . " minutos <br>";
-    
+        echo "Idiomas: " . implode(", ", $this->idiomas) . "<br>";
+        echo "Formato Pantalla: " . $this->formaPantalla . "<br>";
+        
     }
-
-
 
 
 
