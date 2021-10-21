@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-class soporte {
+class Soporte {
     private static float $iva=1.21;
 
     public function __construct(
