@@ -20,9 +20,10 @@ class CintaVideo extends Soporte{
     
     public function muestraResumen(){
 
-        echo "Película en VHS<br>";
-        echo $this->titulo . "<br>";
-        echo $this->precio . "(IVA no incluido) <br>";
+        echo "<br>";
+        echo "Película en VHS: <br>";
+        echo "<i>" . $this->titulo . "</i><br>";
+        echo $this->getPrecio() . " (IVA no incluido) <br>";
         echo "Duración: " . $this->duracion . "<br>";
     
     }
