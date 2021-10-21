@@ -15,6 +15,8 @@ class Soporte {
     private float $precio
   ) {
   
+    $precio = round($precio, 2);
+
   }
   
   public function getPrecio() : float {
@@ -25,7 +27,7 @@ class Soporte {
   
   public function getPrecioConIVA(): float {
     
-    return  $this->precio * self::$iva;
+    return  round($this->precio * self::$iva, 2);
     
   }
 
