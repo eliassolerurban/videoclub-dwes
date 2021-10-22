@@ -25,6 +25,10 @@ class Juego extends Soporte{
         echo "Juego para: $this->consola<br>";
         parent::muestraResumen();
         echo "<br>";
+        $this->muestraJugadoresPosibles();
+    }
+
+    public function muestraJugadoresPosibles(){
         if($this->minJugadores == $this->maxJugadores ){
             if($this->minJugadores == 1){
                 echo "Para un jugador";
@@ -37,7 +41,5 @@ class Juego extends Soporte{
             echo "De $this->minJugadores a $this->maxJugadores jugadores";
         }
     }
-
-
 
 }
