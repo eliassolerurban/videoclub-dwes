@@ -11,7 +11,7 @@ class Soporte {
 
 
     public string $titulo,
-    protected string $numero,
+    protected int $numero,
     private float $precio
   ) {
   
@@ -31,7 +31,7 @@ class Soporte {
     
   }
 
-  public function getNumero(): string{
+  public function getNumero(): int{
 
     return $this->numero;
 
@@ -41,7 +41,7 @@ class Soporte {
     
     echo "<i>" . $this->titulo . "</i>";
     echo "<br>";
-    echo $this->precio . " (IVA no incluido)";
+    echo $this->precio . "€ (IVA no incluido)";
     
   }
   

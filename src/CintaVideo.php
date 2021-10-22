@@ -7,7 +7,7 @@ class CintaVideo extends Soporte{
     public function __construct(
 
         string $titulo,
-        string $numero,
+        int $numero,
         float $precio,
         private int $duracion
 

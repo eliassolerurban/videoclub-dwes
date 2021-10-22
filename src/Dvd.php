@@ -4,13 +4,13 @@ include_once("Soporte.php");
 
 class Dvd extends Soporte{
 
-    public array $idiomas;
 
     public function __construct(
 
         string $titulo,
-        string $numero,
+        int $numero,
         float $precio,
+        public string $idiomas,
         private string $formaPantalla,
     
     )
@@ -25,7 +25,8 @@ class Dvd extends Soporte{
         echo "<br>";
         echo "Película en DVD: <br>";
         parent::muestraResumen();
-        echo "Idiomas: " . implode(", ", $this->idiomas) . "<br>";
+        echo "<br>";
+        echo "Idiomas: $this->idiomas <br>";
         echo "Formato Pantalla: " . $this->formaPantalla . "<br>";
         
     }
