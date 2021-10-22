@@ -15,9 +15,7 @@ class Dvd extends Soporte{
     
     )
     {
-     
         parent::__construct($titulo, $numero, $precio);
-        $idiomas = [];
     }
 
     public function muestraResumen(){
