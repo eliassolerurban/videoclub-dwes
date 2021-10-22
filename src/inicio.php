@@ -1,6 +1,6 @@
 <?php
 include "Soporte.php";
-
+//https://github.com/eliassolerurban/videoclub-dwes
 $soporte1 = new Soporte("Tenet", 22, 3); 
 echo "<strong>" . $soporte1->titulo . "</strong>"; 
 echo "<br>Precio: " . $soporte1->getPrecio() . " euros"; 
