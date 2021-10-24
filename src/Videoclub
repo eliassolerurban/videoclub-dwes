@@ -1,0 +1,22 @@
+<?php
+
+declare(strict_types=1);
+
+class Videoclub extends soporte{
+    private array $productos;
+    private array $socios;
+
+     public function __construct(
+        private string $nombre,private int $numProductos,private int $numSocios){
+
+            $this->productos = [];
+            $this->socios = [];
+        } 
+        private function incluirProducto($productos){
+            $this->productos = [];
+
+
+
+        }
+        
+}
