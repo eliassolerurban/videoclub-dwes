@@ -12,8 +12,8 @@ class Cliente {
         private int $numero,
         private int $maxAlquilerConcurrente = 3,
     ) {
-        $soportesAlquilados = [];
-        $numSoportesAlquilados = 0;
+        $this->soportesAlquilados = [];
+        $this->numSoportesAlquilados = 0;
     }
 
     public function setNumero(int $numero) {
