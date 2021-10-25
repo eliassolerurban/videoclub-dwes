@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Dwes\ProyectoVideoclub;
+
 class Cliente {
 
     public array $soportesAlquilados;
