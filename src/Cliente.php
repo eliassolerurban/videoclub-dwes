@@ -38,7 +38,7 @@ class Cliente {
         return isset($this->soportesAlquilados[$s->getNumero()]);
      }
 
-     public function alquilar(Soporte $s): bool {
+     public function alquilar(Soporte $s): Cliente {
         
         if(!$this->tieneAlquilado($s)){
             if($this->numSoportesAlquilados < $this->maxAlquilerConcurrente){
@@ -50,7 +50,7 @@ class Cliente {
                 echo "<strong>Alquilado soporte a: </strong> $this->nombre";
                 echo "<br>";
                 echo $s->muestraResumen();
-                return true;
+                return $this;
             }
 
             else {
@@ -65,7 +65,7 @@ class Cliente {
             echo "El cliente ya tiene alquilado el soporte <strong>$s->titulo</strong>";
         }
 
-        return false;
+        return $this;
     }
 
     public function devolver(int $numSoporte): bool {
