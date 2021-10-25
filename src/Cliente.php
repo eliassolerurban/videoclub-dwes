@@ -69,7 +69,6 @@ class Cliente {
     }
 
     public function devolver(int $numSoporte): bool {
-        //le pasa null y salta excepcion
         if($this->numSoportesAlquilados != 0){
             unset($this->soportesAlquilados[$numSoporte]);
             $this->numSoportesAlquilados--;
