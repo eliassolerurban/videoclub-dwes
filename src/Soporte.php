@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+include_once("Resumible.php");
+
 /*
 Ahora es una clase abstracta e implementamos de forma distinta muestraResumen() en cada hijo
 */
