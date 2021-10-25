@@ -22,30 +22,38 @@ class Videoclub {
         $this->numSocios = 0;
     }
 
-    private function incluirProducto(Soporte $s): void {
+    private function incluirProducto(Soporte $s): Videoclub {
         $this->productos[$s->getNumero()] = $s;
         $this->numProductos++;
+        return $this;
     }
     
-    public function incluirCintaVideo(string $titulo, float $precio, int $duracion): void {
+    public function incluirCintaVideo(string $titulo, float $precio, int $duracion): Videoclub {
         $c = new CintaVideo($titulo, $this->numProductos, $precio, $duracion);
         $this->incluirProducto($c);
+        return $this;
     }
 
-    public function incluirDvd(string $titulo, float $precio, string $idiomas, string $pantalla): void {
+    public function incluirDvd(string $titulo, float $precio, string $idiomas, string $pantalla): Videoclub {
         $d = new Dvd($titulo, $this->numProductos, $precio, $idiomas, $pantalla);
         $this->incluirProducto($d);
+        return $this;
+
     }
 
-    public function incluirJuego(string $titulo, float $precio, string $consola, int $minJ, int $maxJ): void {
+    public function incluirJuego(string $titulo, float $precio, string $consola, int $minJ, int $maxJ): Videoclub {
         $j = new Juego($titulo, $this->numProductos, $precio, $consola, $minJ, $maxJ);
         $this->incluirProducto($j);
+        return $this;
+
     }
 
-    public function incluirSocio(string $nombre, int $maxAlquiler=3): void {
+    public function incluirSocio(string $nombre, int $maxAlquiler=3): Videoclub {
         $c = new Cliente($nombre, $this->numSocios, $maxAlquiler);
         $this->socios[$c->getNumero()] = $c;
-        $this->numSocios++;   
+        $this->numSocios++;
+        return $this;
+   
     }
 
     public function listarProductos(): void{
@@ -64,7 +72,7 @@ class Videoclub {
         echo "</ol>";
     }
 
-    public function alquilaSocioProducto(int $numeroCliente, int $numeroSoporte): void {
+    public function alquilaSocioProducto(int $numeroCliente, int $numeroSoporte): Videoclub {
         if(isset($this->socios[$numeroCliente])){
             if(isset($this->productos[$numeroSoporte])){
                 $c = $this->socios[$numeroCliente];
@@ -74,6 +82,7 @@ class Videoclub {
                 
             }
         }
+        return $this;
     }
 
 }

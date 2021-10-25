@@ -16,8 +16,9 @@ class Cliente {
         $this->numSoportesAlquilados = 0;
     }
 
-    public function setNumero(int $numero) {
+    public function setNumero(int $numero): Cliente {
         $this->numero = $numero;
+        return $this;
     }
 
     public function getNumero(): int {
@@ -38,7 +39,6 @@ class Cliente {
      }
 
      public function alquilar(Soporte $s): bool {
-        
         
         if(!$this->tieneAlquilado($s)){
             if($this->numSoportesAlquilados < $this->maxAlquilerConcurrente){
