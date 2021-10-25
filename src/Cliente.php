@@ -42,7 +42,7 @@ class Cliente {
         
         if(!$this->tieneAlquilado($s)){
             if($this->numSoportesAlquilados < $this->maxAlquilerConcurrente){
-                $this->soportesAlquilados[$s->getNumero()] = $s->titulo;
+                $this->soportesAlquilados[$s->getNumero()] = $s;
                 $this->numSoportesAlquilados++;
                 
                 echo "<br>";
