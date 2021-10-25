@@ -19,12 +19,9 @@ class Juego extends Soporte{
         parent::__construct($titulo, $numero, $precio);
     }
 
-    public function muestraResumen(){
+    public function muestraResumen(): void{
 
-        echo "<i>" . $this->titulo . "</i>";
-        echo "<br>";
-        echo $this->getPrecio() . "€ (IVA no incluido)";
-        echo "<br>";
+        parent::muestraResumen();
         echo "Juego para: $this->consola<br>";
         echo "<br>";
         $this->muestraJugadoresPosibles();

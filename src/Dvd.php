@@ -18,13 +18,11 @@ class Dvd extends Soporte{
         parent::__construct($titulo, $numero, $precio);
     }
 
-    public function muestraResumen(){
+    public function muestraResumen(): void{
 
         echo "<br>";
         echo "Película en DVD: <br>";
-        echo "<i>" . $this->titulo . "</i>";
-        echo "<br>";
-        echo $this->getPrecio() . "€ (IVA no incluido)";echo "<br>";
+        parent::muestraResumen();
         echo "Idiomas: $this->idiomas <br>";
         echo "Formato Pantalla: " . $this->formaPantalla . "<br>";
         
