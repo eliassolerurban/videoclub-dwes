@@ -1,5 +1,7 @@
 <?php
 include "Soporte.php";
+use Dwes\ProyectoVideoclub\Soporte;
+
 //https://github.com/eliassolerurban/videoclub-dwes
 $soporte1 = new Soporte("Tenet", 22, 3); 
 echo "<strong>" . $soporte1->titulo . "</strong>"; 

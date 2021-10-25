@@ -1,5 +1,7 @@
 <?php
 include "Dvd.php";
+use Dwes\ProyectoVideoclub\Dvd;
+
 
 $miDvd = new Dvd("Origen", 24, 15, "es,en,fr", "16:9"); 
 echo "<strong>" . $miDvd->titulo . "</strong>"; 

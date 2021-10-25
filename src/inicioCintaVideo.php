@@ -1,5 +1,6 @@
 <?php
 include "CintaVideo.php";
+use Dwes\ProyectoVideoclub\CintaVideo;
 
 $miCinta = new CintaVideo("Los cazafantasmas", 23, 3.5, 107); 
 echo "<strong>" . $miCinta->titulo . "</strong>"; 
