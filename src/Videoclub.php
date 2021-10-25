@@ -28,26 +28,22 @@ class Videoclub {
     }
     
     public function incluirCintaVideo(string $titulo, float $precio, int $duracion): void {
-        $numero = count($this->productos);
-        $c = new CintaVideo($titulo, $numero, $precio, $duracion);
+        $c = new CintaVideo($titulo, $this->numProductos, $precio, $duracion);
         $this->incluirProducto($c);
     }
 
     public function incluirDvd(string $titulo, float $precio, string $idiomas, string $pantalla): void {
-        $numero = count($this->productos);
-        $d = new Dvd($titulo, $numero, $precio, $idiomas, $pantalla);
+        $d = new Dvd($titulo, $this->numProductos, $precio, $idiomas, $pantalla);
         $this->incluirProducto($d);
     }
 
     public function incluirJuego(string $titulo, float $precio, string $consola, int $minJ, int $maxJ): void {
-        $numero = count($this->productos);
-        $j = new Juego($titulo, $numero, $precio, $consola, $minJ, $maxJ);
+        $j = new Juego($titulo, $this->numProductos, $precio, $consola, $minJ, $maxJ);
         $this->incluirProducto($j);
     }
 
     public function incluirSocio(string $nombre, int $maxAlquiler=3): void {
-        $numero = count($this->socios);
-        $c = new Cliente($nombre, $numero, $maxAlquiler);
+        $c = new Cliente($nombre, $this->numSocios, $maxAlquiler);
         $this->socios[$c->getNumero()] = $c;
         $this->numSocios++;   
     }
