@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-
-class Soporte {
+/*
+Ahora es una clase abstracta e implementamos de forma distinta muestraResumen() en cada hijo
+*/
+abstract class Soporte {
     
   private static float $iva = 1.21;
 
@@ -37,12 +39,5 @@ class Soporte {
 
   }
 
-  public function muestraResumen() {
-    
-    echo "<i>" . $this->titulo . "</i>";
-    echo "<br>";
-    echo $this->precio . "€ (IVA no incluido)";
-    
-  }
-  
+  public abstract function muestraResumen();
 }

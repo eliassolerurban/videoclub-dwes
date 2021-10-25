@@ -22,7 +22,9 @@ class CintaVideo extends Soporte{
         
         echo "<br>";
         echo "Película en VHS: <br>";
-        parent::muestraResumen();
+        echo "<i>" . $this->titulo . "</i>";
+        echo "<br>";
+        echo $this->getPrecio() . "€ (IVA no incluido)";
         echo "<br>";
         echo "Duración: " . $this->duracion . " minutos <br>";
     

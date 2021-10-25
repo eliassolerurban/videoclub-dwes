@@ -21,9 +21,11 @@ class Juego extends Soporte{
 
     public function muestraResumen(){
 
+        echo "<i>" . $this->titulo . "</i>";
+        echo "<br>";
+        echo $this->getPrecio() . "€ (IVA no incluido)";
         echo "<br>";
         echo "Juego para: $this->consola<br>";
-        parent::muestraResumen();
         echo "<br>";
         $this->muestraJugadoresPosibles();
     }
