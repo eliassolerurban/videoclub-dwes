@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 class Cliente {
 
-    private array $soportesAlquilados;
+    public array $soportesAlquilados;
     private int $numSoportesAlquilados;
 
     public function __construct(
@@ -34,23 +34,42 @@ class Cliente {
      }
 
      public function tieneAlquilado(Soporte $s): bool {
-        return isset($this->soportesAlquilados[$s->getNumero()]); //falta revisar
+        return isset($this->soportesAlquilados[$s->getNumero()]);
      }
 
      public function alquilar(Soporte $s): bool {
-        if(!$this->tieneAlquilado($s) and count($this->soportesAlquilados) < $this->maxAlquilerConcurrente){
-            $this->soportesAlquilados[] = $s;
-            $this->numSoportesAlquilados++;
-            
-            echo "El soporte se ha alquilado correctamente";
-            return true;
+        
+        
+        if(!$this->tieneAlquilado($s)){
+            if($this->numSoportesAlquilados < $this->maxAlquilerConcurrente){
+                $this->soportesAlquilados[$s->getNumero()] = $s->titulo;
+                $this->numSoportesAlquilados++;
+                
+                echo "<br>";
+                echo "<br>";
+                echo "<strong>Alquilado soporte a: </strong> $this->nombre";
+                echo "<br>";
+                echo $s->muestraResumen();
+                return true;
+            }
+
+            else {
+                echo "<br>";
+                echo "El cliente tiene $this->numSoportesAlquilados elementos alquilados.
+                    No puede alquilar más en este videoclub hasta que no devuelva alguno.";
+            }
         }
 
-        echo "No se ha podido alquilar el soporte";
+        else {
+            echo "<br>";
+            echo "El cliente ya tiene alquilado el soporte <strong>$s->titulo</strong>";
+        }
+
         return false;
     }
 
     public function devolver(int $numSoporte): bool {
+        //le pasa null y salta excepcion
         if($this->tieneAlquilado($this->soportesAlquilados[$numSoporte])){
             unset($this->soportesAlquilados[$numSoporte]);
             $this->numSoportesAlquilados--;
@@ -59,7 +78,7 @@ class Cliente {
             return true;
         }
 
-        echo "El soporte no se ha podido devolver";
+        echo "No se ha encontrado el soporte en los alquileres de este cliente.";
         return false;
     }
 
