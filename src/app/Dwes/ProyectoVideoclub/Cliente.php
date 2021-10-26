@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Dwes\ProyectoVideoclub;
 
+use Dwes\ProyectoVideoclub\Cliente as ProyectoVideoclubCliente;
 use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
 use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
@@ -53,38 +54,36 @@ class Cliente
     public function alquilar(Soporte $s): Cliente
     {
 
-        if (!$this->tieneAlquilado($s)) {
-            if ($this->numSoportesAlquilados < $this->maxAlquilerConcurrente) {
-                $this->soportesAlquilados[$s->getNumero()] = $s;
-                $this->numSoportesAlquilados++;
-
-                echo "<br>";
-                echo "<br>";
-                echo "<strong>Alquilado soporte a: </strong> $this->nombre";
-                echo "<br>";
-                echo $s->muestraResumen();
-                return $this;
-            } else {
-                throw new CupoSuperadoException("CupoSuperadoException: El cliente tiene $this->numSoportesAlquilados elementos alquilados.");
-            }
-        } else {
+        if ($this->tieneAlquilado($s)) {
             throw new SoporteYaAlquiladoException("SoporteYaAlquiladoException: El cliente ya tiene alquilado el soporte <strong>$s->titulo</strong>");
         }
 
-        return $this;
+        if ($this->numSoportesAlquilados >= $this->maxAlquilerConcurrente) {
+            throw new CupoSuperadoException("CupoSuperadoException: El cliente tiene $this->numSoportesAlquilados elementos alquilados.");
+        }
+
+        $this->soportesAlquilados[$s->getNumero()] = $s;
+            $this->numSoportesAlquilados++;
+            echo "<br>";
+            echo "<br>";
+            echo "<strong>Alquilado soporte a: </strong> $this->nombre";
+            echo "<br>";
+            echo $s->muestraResumen();
+            return $this;
+
     }
 
-    public function devolver(int $numSoporte): bool
+    public function devolver(int $numSoporte): Cliente
     {
-        if ($this->numSoportesAlquilados != 0) {
-            unset($this->soportesAlquilados[$numSoporte]);
-            $this->numSoportesAlquilados--;
-
-            echo "El soporte se ha devueldo correctamente";
-            return true;
+        if ($this->numSoportesAlquilados == 0) {
+            throw new SoporteNoEncontradoException("SoporteNoEncontradoException: No se ha encontrado el soporte en los alquileres de este cliente.");
         }
-        throw new SoporteNoEncontradoException("SoporteNoEncontradoException: No se ha encontrado el soporte en los alquileres de este cliente.");
-        return false;
+
+        unset($this->soportesAlquilados[$numSoporte]);
+        $this->numSoportesAlquilados--;
+
+        echo "El soporte se ha devueldo correctamente";
+        return $this;
     }
 
     public function listarAlquileres(): void
