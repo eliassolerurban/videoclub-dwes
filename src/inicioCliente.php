@@ -1,5 +1,5 @@
 <?php
-include_once "autoload_php";
+include_once("autoload.php");
 
 use Dwes\ProyectoVideoclub\Cliente;
 use Dwes\ProyectoVideoclub\CintaVideo;
