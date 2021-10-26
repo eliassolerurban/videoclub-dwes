@@ -1,5 +1,7 @@
 <?php declare(strict_types=1);
 
+namespace Dwes\ProyectoVideoclub;
+
 include_once("Juego.php");
 include_once("Dvd.php");
 include_once("CintaVideo.php");
