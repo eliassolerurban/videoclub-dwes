@@ -69,6 +69,9 @@ class Cliente
             echo "<strong>Alquilado soporte a: </strong> $this->nombre";
             echo "<br>";
             echo $s->muestraResumen();
+
+            $s->setAlquilado(true);
+
             return $this;
 
     }
@@ -83,6 +86,9 @@ class Cliente
         $this->numSoportesAlquilados--;
         echo "<br>";
         echo "El soporte se ha devueldo correctamente";
+        
+        $this->soportesAlquilados[$numSoporte]->setAlquilado(false);
+        
         return $this;
     }
 

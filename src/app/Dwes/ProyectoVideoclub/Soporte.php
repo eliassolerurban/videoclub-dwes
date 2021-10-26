@@ -16,13 +16,20 @@ abstract class Soporte implements Resumible{
 
     public string $titulo,
     protected int $numero,
-    private float $precio
+    private float $precio,
+    private bool $alquilado = false
   ) {
   
     $precio = round($precio, 2);
 
   }
   
+  public function setAlquilado(bool $alquilado) {
+
+    $this->alquilado = $alquilado;
+  
+  }
+
   public function getPrecio() : float {
 
     return  $this->precio;
