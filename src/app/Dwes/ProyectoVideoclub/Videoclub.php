@@ -90,23 +90,23 @@ class Videoclub {
                 
             }
             catch (SoporteNoEncontradoException $e){
-                echo "ERROR: " . $e->getMessage;
+                echo "Alerta: " . $e->getMessage() . "\n";
 
             } 
             catch (CupoSuperadoException $e){
-                echo "ERROR: " . $e->getMessage;
+                echo "Alerta: " . $e->getMessage() . "\n";
 
             }
             catch (SoporteYaAlquiladoException $e){
-                echo "ERROR: " . $e->getMessage;
+                echo "Alerta: " . $e->getMessage() . "\n";
 
             }
             catch (VideoclubException $e){
-                echo "ERROR: " . $e->getMessage;
+                echo "Alerta: " . $e->getMessage() . "\n";
 
             }
             catch (Exception $e){
-                echo "ERROR: " . $e->getMessage;
+                echo "Alerta: " . $e->getMessage . "\n";
 
             }
         }
