@@ -1,5 +1,5 @@
 <?php
-include "Dvd.php";
+include "autoload.php";
 use Dwes\ProyectoVideoclub\Dvd;
 
 

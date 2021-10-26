@@ -1,5 +1,5 @@
 <?php
-include "Soporte.php";
+include "autoload.php";
 use Dwes\ProyectoVideoclub\Soporte;
 
 //https://github.com/eliassolerurban/videoclub-dwes

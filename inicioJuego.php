@@ -1,5 +1,5 @@
 <?php
-include "Juego.php";
+include "autoload.php";
 use Dwes\ProyectoVideoclub\Juego;
 
 
