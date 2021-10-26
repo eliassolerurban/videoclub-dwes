@@ -1,5 +1,5 @@
 <?php
-include_once("autoload.php"); // No incluimos nada más
+include_once("vendor/autoload.php"); // No incluimos nada más
 use Dwes\ProyectoVideoclub\Videoclub;
 $vc = new Videoclub("Severo 8A"); 
 
