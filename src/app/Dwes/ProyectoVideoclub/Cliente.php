@@ -53,7 +53,7 @@ class Cliente
 
     public function alquilar(Soporte $s): Cliente
     {
-
+        //fatal error, duda
         if ($this->tieneAlquilado($s)) {
             throw new SoporteYaAlquiladoException("SoporteYaAlquiladoException: El cliente ya tiene alquilado el soporte <strong>$s->titulo</strong><br>");
         }
