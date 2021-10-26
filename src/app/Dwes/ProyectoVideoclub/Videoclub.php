@@ -19,6 +19,8 @@ class Videoclub {
     private int $numProductos;
     private array $socios;
     private int $numSocios;
+    private int $numProductosAlquilados;
+    private int $numTotalAlquileres;
 
     public function __construct(
         private string $nombre,
@@ -28,6 +30,18 @@ class Videoclub {
 
         $this->socios = [];
         $this->numSocios = 0;
+
+        $this->numProductosAlquilados = 0; 
+        $this->numTotalAlquileres = 0; 
+    }
+
+    public function getNumProductosAlquilados(){
+        return $this->numProductosAlquilados;
+    }
+
+
+    public function getNumTotalAlquileres(){
+        return $this->numTotalAlquileres;
     }
 
     private function incluirProducto(Soporte $s): Videoclub {
@@ -109,6 +123,21 @@ class Videoclub {
                 echo "Alerta: " . $e->getMessage . "\n";
 
             }
+        }
+        return $this;
+    }
+
+    public function alquilarSocioProductos(int $numSocio, array $numerosProducto): Videoclub{
+        $disponibles = true;
+        
+        foreach ($numerosProducto as $numeroProducto) {
+            if($this->productos[$numeroProducto]->getAlquilado()){
+                throw new SoporteYaAlquiladoException("No puedes alquilar el pack de soportes porque ya tienes alquilado el soporte " . $this->productos[$numeroProducto]);
+            }
+        }
+
+        foreach ($numerosProducto as $numeroProducto) {
+            $this->alquilaSocioProducto($numSocio, $numeroProducto);
         }
         return $this;
     }
