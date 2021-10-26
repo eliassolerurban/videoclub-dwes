@@ -2,6 +2,12 @@
 
 namespace Dwes\ProyectoVideoclub;
 
+use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
+use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
+use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
+use Dwes\ProyectoVideoclub\Util\VideoclubException;
+use Exception;
+
 include_once("Juego.php");
 include_once("Dvd.php");
 include_once("CintaVideo.php");
@@ -76,12 +82,32 @@ class Videoclub {
 
     public function alquilaSocioProducto(int $numeroCliente, int $numeroSoporte): Videoclub {
         if(isset($this->socios[$numeroCliente])){
-            if(isset($this->productos[$numeroSoporte])){
+            try {
                 $c = $this->socios[$numeroCliente];
                 $s = $this->productos[$numeroSoporte];
 
                 $c->alquilar($s);
                 
+            }
+            catch (SoporteNoEncontradoException $e){
+                echo "ERROR: " . $e->getMessage;
+
+            } 
+            catch (CupoSuperadoException $e){
+                echo "ERROR: " . $e->getMessage;
+
+            }
+            catch (SoporteYaAlquiladoException $e){
+                echo "ERROR: " . $e->getMessage;
+
+            }
+            catch (VideoclubException $e){
+                echo "ERROR: " . $e->getMessage;
+
+            }
+            catch (Exception $e){
+                echo "ERROR: " . $e->getMessage;
+
             }
         }
         return $this;
