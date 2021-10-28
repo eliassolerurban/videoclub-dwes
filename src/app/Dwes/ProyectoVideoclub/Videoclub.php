@@ -127,9 +127,7 @@ class Videoclub {
         return $this;
     }
 
-    public function alquilarSocioProductos(int $numSocio, array $numerosProducto): Videoclub{
-        $disponibles = true;
-        
+    public function alquilarSocioProductos(int $numSocio, array $numerosProducto): Videoclub{        
         foreach ($numerosProducto as $numeroProducto) {
             if($this->productos[$numeroProducto]->getAlquilado()){
                 throw new SoporteYaAlquiladoException("No puedes alquilar el pack de soportes porque ya tienes alquilado el soporte " . $this->productos[$numeroProducto]);
