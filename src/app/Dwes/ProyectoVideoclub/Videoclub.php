@@ -140,4 +140,50 @@ class Videoclub {
         return $this;
     }
 
+    public function devolverSocioProducto(int $numeroCliente, int $numeroProducto): Videoclub{
+        if(isset($this->socios[$numeroCliente])){
+            try {
+                $c = $this->socios[$numeroCliente];
+                $s = $this->productos[$numeroProducto];
+
+                $c->devolver($s);
+                
+            }
+            catch (SoporteNoEncontradoException $e){
+                echo "Alerta: " . $e->getMessage() . "\n";
+
+            } 
+            catch (CupoSuperadoException $e){
+                echo "Alerta: " . $e->getMessage() . "\n";
+
+            }
+            catch (SoporteYaAlquiladoException $e){
+                echo "Alerta: " . $e->getMessage() . "\n";
+
+            }
+            catch (VideoclubException $e){
+                echo "Alerta: " . $e->getMessage() . "\n";
+
+            }
+            catch (Exception $e){
+                echo "Alerta: " . $e->getMessage . "\n";
+
+            }
+        }
+        return $this;
+    }
+
+    public function devolverSocioProductos(int $numSocio, array $numerosProducto): Videoclub{        
+        foreach ($numerosProducto as $numeroProducto) {
+            if(!$this->productos[$numeroProducto]->getAlquilado()){
+                throw new SoporteYaAlquiladoException("No puedes devolver el pack de soportes porque no tienes alquilado el soporte " . $this->productos[$numeroProducto]);
+            }
+        }
+
+        foreach ($numerosProducto as $numeroProducto) {
+            $this->devolverSocioProducto($numSocio, $numeroProducto);
+        }
+        return $this;
+    }
+
 }
