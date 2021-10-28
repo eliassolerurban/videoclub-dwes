@@ -20,25 +20,27 @@ class Juego extends Soporte{
         parent::__construct($titulo, $numero, $precio);
     }
 
-    public function muestraResumen(): void{
-
-        parent::muestraResumen();
-        echo "Juego para: $this->consola<br>";
-        echo "<br>";
-        $this->muestraJugadoresPosibles();
+    public function muestraResumen(): string{
+        $cadena =  "<br>";
+        $cadena .= "Juego para: $this->consola<br>";
+        $cadena .= "<br>";
+        $cadena .= parent::muestraResumen();
+        $cadena .= $this->muestraJugadoresPosibles();
+        
+        return $cadena;
     }
 
-    public function muestraJugadoresPosibles(){
+    public function muestraJugadoresPosibles(): string{
         if($this->minJugadores == $this->maxJugadores ){
             if($this->minJugadores == 1){
-                echo "Para un jugador";
+                return "Para un jugador";
             }
             else{
-                echo "Para $this->minJugadores jugadores";
+                return "Para $this->minJugadores jugadores";
             }
         }
         else{
-            echo "De $this->minJugadores a $this->maxJugadores jugadores";
+            return "De $this->minJugadores a $this->maxJugadores jugadores";
         }
     }
 
