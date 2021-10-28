@@ -55,11 +55,11 @@ class Cliente
     {
         //fatal error, duda
         if ($this->tieneAlquilado($s)) {
-            throw new SoporteYaAlquiladoException("SoporteYaAlquiladoException: El cliente ya tiene alquilado el soporte <strong>$s->titulo</strong><br>");
+            throw new SoporteYaAlquiladoException("El cliente ya tiene alquilado el soporte <strong>$s->titulo</strong><br>");
         }
 
         if ($this->numSoportesAlquilados >= $this->maxAlquilerConcurrente) {
-            throw new CupoSuperadoException("CupoSuperadoException: El cliente tiene $this->numSoportesAlquilados elementos alquilados.<br>");
+            throw new CupoSuperadoException("El cliente tiene $this->numSoportesAlquilados elementos alquilados.<br>");
         }
 
         $this->soportesAlquilados[$s->getNumero()] = $s;
@@ -79,7 +79,7 @@ class Cliente
     public function devolver(int $numSoporte): Cliente
     {
         if ($this->numSoportesAlquilados == 0) {
-            throw new SoporteNoEncontradoException("SoporteNoEncontradoException: No se ha encontrado el soporte en los alquileres de este cliente.<br>");
+            throw new SoporteNoEncontradoException("No se ha encontrado el soporte en los alquileres de este cliente.<br>");
         }
 
         unset($this->soportesAlquilados[$numSoporte]);
