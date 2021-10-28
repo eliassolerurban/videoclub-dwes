@@ -94,7 +94,6 @@ class Cliente
 
     public function listarAlquileres(): void
     {
-        echo "<br>";
         echo "$this->nombre cuenta con $this->numSoportesAlquilados alquileres";
         echo "";
         echo "Los alquileres son:";
