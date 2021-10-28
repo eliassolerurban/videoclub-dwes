@@ -40,10 +40,11 @@ class Cliente
         return $this->numSoportesAlquilados;
     }
 
-    public function muestraResumen()
-    {
-        echo $this->nombre;
-        echo count($this->soportesAlquilados);
+    public function muestraResumen(): string {
+        $cadena = $this->nombre;
+        $cadena .= count($this->soportesAlquilados);
+
+        return $cadena;
     }
 
     public function tieneAlquilado(Soporte $s): bool
