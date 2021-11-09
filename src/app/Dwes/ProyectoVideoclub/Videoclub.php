@@ -78,20 +78,24 @@ class Videoclub {
    
     }
 
-    public function listarProductos(): void{
-        echo "<ol>";
+    public function listarProductos(): string{
+        $cadena = "<ol>";
         foreach($this->productos as $producto){
-            echo "<li>" . $producto->muestraResumen() . "</li>";
+            $cadena .= "<li>" . $producto->muestraResumen() . "</li>";
         }
-        echo "</ol>";
+        $cadena .= "</ol>";
+        
+        return $cadena;
     }
 
-    public function listarSocios(): void{
-        echo "<ol>";
+    public function listarSocios(): string{
+        $cadena = "<ol>";
         foreach($this->socios as $socio){
-            echo "<li>" . $socio->muestraResumen() . "</li>";
+            $cadena .= "<li>" . $socio->muestraResumen() . "</li>";
         }
-        echo "</ol>";
+        $cadena .= "</ol>";
+
+        return $cadena;
     }
 
     public function alquilaSocioProducto(int $numeroCliente, int $numeroSoporte): Videoclub {
