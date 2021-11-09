@@ -49,13 +49,15 @@ $_SESSION["listaProductos"] = $vc->listarProductos();
 </head>
 
 <body>
-    <p>
+    <h1>
         Bienvenido,
         <?php if (isset($_SESSION["usuario"])) {
             echo $_SESSION["usuario"];
         } ?>
-    </p>
+    </h1>
+    <h2>Lista de socios:</h2>
     <?= $_SESSION["listaSocios"]?>
+    <h2>Lista de productos:</h2>
     <?= $_SESSION["listaProductos"]?>
     <a href="logout.php">Cerrar sesión</a>
 </body>
