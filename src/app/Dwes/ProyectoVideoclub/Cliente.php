@@ -19,6 +19,9 @@ class Cliente
         public string $nombre,
         private int $numero,
         private int $maxAlquilerConcurrente = 3,
+        private string $usuario="usuario",
+        private string $password="usuario"
+
     ) {
         $this->soportesAlquilados = [];
         $this->numSoportesAlquilados = 0;
@@ -42,6 +45,8 @@ class Cliente
 
     public function muestraResumen(): string {
         $cadena = $this->nombre;
+        $cadena .= $this->usuario;
+        $cadena .= $this->password;
         $cadena .= count($this->soportesAlquilados);
 
         return $cadena;

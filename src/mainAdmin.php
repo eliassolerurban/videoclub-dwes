@@ -27,7 +27,7 @@ try {
         ->incluirCintaVideo("El nombre de la Rosa", 1.5, 140);
 
     //mismo para socios 
-    $vc->incluirSocio("Amancio Ortega")->incluirSocio("Pablo Picasso", 2);
+    $vc->incluirSocio("Amancio Ortega",3,"amancio","ortega")->incluirSocio("Pablo Picasso", 2,"pablo", "picasso");
 } catch (VideoclubException $e) {
     echo "Se ha producido un error: " . $e->getMessage();
 }
