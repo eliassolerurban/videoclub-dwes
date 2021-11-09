@@ -92,13 +92,15 @@ class Cliente
         return $this;
     }
 
-    public function listarAlquileres(): void
+    public function listarAlquileres(): string
     {
-        echo "$this->nombre cuenta con $this->numSoportesAlquilados alquileres";
-        echo "";
-        echo "Los alquileres son:";
+        $cadena= "$this->nombre cuenta con $this->numSoportesAlquilados alquileres";
+        $cadena .= "";
+        $cadena .= "Los alquileres son:";
         foreach ($this->soportesAlquilados as $soportesAlquilado) {
-            echo $soportesAlquilado->titulo;
+            $cadena .= $soportesAlquilado->titulo;
         }
+
+        return $cadena;
     }
 }

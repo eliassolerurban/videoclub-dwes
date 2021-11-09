@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Bienvenido, <?php $_SESSION["usuario"] ?></p>
+    <p>Bienvenido, <?= $_SESSION["usuario"] ?></p>
     <a href="logout.php">Cerrar sesión</a>
 </body>
 </html>

@@ -11,7 +11,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action='411login.php' method='post'>
+    <p>
+        <?php
+            if(isset($error)){
+                echo $error;
+            }
+        ?>
+    </p>
+    <form action='login.php' method='post'>
         <fieldset>
             <legend>Login</legend>
             <div>
