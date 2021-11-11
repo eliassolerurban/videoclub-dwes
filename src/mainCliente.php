@@ -4,11 +4,6 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-include_once("datosVideoclub.php");
-
-if(in_array($_SESSION["usuario"], $vc->usuarios)){
-    
-}
 
 ?>
 

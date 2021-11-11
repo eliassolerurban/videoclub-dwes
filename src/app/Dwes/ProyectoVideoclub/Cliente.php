@@ -28,6 +28,14 @@ class Cliente
         $this->numSoportesAlquilados = 0;
     }
 
+    public function getUsuario(){
+        return $this->usuario;
+    }
+    
+    public function getPassword(){
+        return $this->password;
+    }
+
     public function setNumero(int $numero): Cliente
     {
         $this->numero = $numero;
