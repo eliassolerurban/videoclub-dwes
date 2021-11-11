@@ -1,39 +1,34 @@
 <?php
 
 declare(strict_types=1);
-include_once("vendor/autoload.php"); // No incluimos nada más
-
-use Dwes\ProyectoVideoclub\Util\VideoclubException;
-use Dwes\ProyectoVideoclub\Videoclub;
 
 if (!isset($_SESSION)) {
     session_start();
+    echo "<br>se inicia la sesión";
 }
 
 if ($_SESSION["usuario"] != "admin") {
     die("Debes de ser administrador para acceder a este recurso. <a href='index.php'>Volver al login</a>");
 }
 
-$vc = new Videoclub("Severo 8A");
+$vc->incluirJuego("God of War", 19.99, "PS4", 1, 1)
+    ->incluirJuego("The Last of Us Part II", 49.99, "PS4", 1, 1)
+    ->incluirDvd("Torrente", 4.5, "es", "16:9")
+    ->incluirDvd("Origen", 4.5, "es,en,fr", "16:9")
+    ->incluirDvd("El Imperio Contraataca", 3, "es,en", "16:9")
+    ->incluirCintaVideo("Los cazafantasmas", 3.5, 107)
+    ->incluirCintaVideo("El nombre de la Rosa", 1.5, 140);
 
-try {
-    //voy a incluir unos cuantos soportes de prueba 
-    $vc->incluirJuego("God of War", 19.99, "PS4", 1, 1)
-        ->incluirJuego("The Last of Us Part II", 49.99, "PS4", 1, 1)
-        ->incluirDvd("Torrente", 4.5, "es", "16:9")
-        ->incluirDvd("Origen", 4.5, "es,en,fr", "16:9")
-        ->incluirDvd("El Imperio Contraataca", 3, "es,en", "16:9")
-        ->incluirCintaVideo("Los cazafantasmas", 3.5, 107)
-        ->incluirCintaVideo("El nombre de la Rosa", 1.5, 140);
-
-    //mismo para socios 
-    $vc->incluirSocio("Amancio Ortega",3,"amancio","ortega")->incluirSocio("Pablo Picasso", 2,"pablo", "picasso");
-} catch (VideoclubException $e) {
-    echo "Se ha producido un error: " . $e->getMessage();
+if(!isset($_SESSION["socios"])){
+    $_SESSION["socios"] = $vc->getSocios();
+    echo "<br>se setean socios";
 }
 
-$_SESSION["socios"] = $vc->getSocios();
-$_SESSION["productos"] = $vc->getProductos();
+if(!isset($_SESSION["productos"])){
+    $_SESSION["productos"] = $vc->getProductos();
+    echo "<br>se setean productos";
+
+}
 
 
 ?>

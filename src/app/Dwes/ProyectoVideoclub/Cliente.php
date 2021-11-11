@@ -18,9 +18,10 @@ class Cliente
     public function __construct(
         public string $nombre,
         private int $numero,
-        private int $maxAlquilerConcurrente = 3,
-        private string $usuario="usuario",
-        private string $password="usuario"
+        private string $usuario,
+        private string $password,
+        private int $maxAlquilerConcurrente = 3
+
 
     ) {
         $this->soportesAlquilados = [];
@@ -44,10 +45,9 @@ class Cliente
     }
 
     public function muestraResumen(): string {
-        $cadena = $this->nombre;
-        $cadena .= $this->usuario;
-        $cadena .= $this->password;
-        $cadena .= count($this->soportesAlquilados);
+        $cadena = "Nombre: " . $this->nombre;
+        $cadena .= "<br>Usuario: " . $this->usuario;
+        $cadena .= "<br>Número de alquileres: " . count($this->soportesAlquilados);
 
         return $cadena;
     }

@@ -79,8 +79,8 @@ class Videoclub {
 
     }
 
-    public function incluirSocio(string $nombre, int $maxAlquiler=3): Videoclub {
-        $c = new Cliente($nombre, $this->numSocios, $maxAlquiler);
+    public function incluirSocio(string $nombre, string $usuario, string $password, int $maxAlquiler=3): Videoclub {
+        $c = new Cliente($nombre, $this->numSocios, $usuario, $password, $maxAlquiler);
         $this->socios[$c->getNumero()] = $c;
         $this->numSocios++;
         return $this;

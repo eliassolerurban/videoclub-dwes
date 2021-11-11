@@ -19,7 +19,7 @@ try{
     $vc->listarProductos(); 
 
     //voy a crear algunos socios 
-    $vc->incluirSocio("Amancio Ortega")->incluirSocio("Pablo Picasso", 2); 
+    //$vc->incluirSocio("Amancio Ortega")->incluirSocio("Pablo Picasso", 2); 
 
     $vc->alquilaSocioProducto(1,2)->alquilaSocioProducto(1,3); 
     //alquilo otra vez el soporte 2 al socio 1. 

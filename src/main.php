@@ -1,5 +1,15 @@
 <?php declare(strict_types=1);
 
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+include_once("datosVideoclub.php");
+
+if(in_array($_SESSION["usuario"], $vc->usuarios)){
+    
+}
+
 ?>
 
 <!DOCTYPE html>
