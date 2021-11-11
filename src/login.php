@@ -33,7 +33,7 @@ if(isset($_POST["usuario"])){
             }
             
             $error = "Acceso incorrecto.";
-            header("Location: index.php");
+            include("index.php");
             
         }
             
