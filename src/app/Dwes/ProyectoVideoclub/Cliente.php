@@ -52,6 +52,11 @@ class Cliente
         return $this->numSoportesAlquilados;
     }
 
+    public function getAlquileres(): array
+    {
+        return $this->soportesAlquilados;
+    }
+
     public function muestraResumen(): string {
         $cadena = "Nombre: " . $this->nombre;
         $cadena .= "<br>Usuario: " . $this->usuario;
@@ -59,6 +64,7 @@ class Cliente
 
         return $cadena;
     }
+    
 
     public function tieneAlquilado(Soporte $s): bool
     {

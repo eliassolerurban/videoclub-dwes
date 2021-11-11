@@ -1,6 +1,8 @@
 <?php
 
 declare(strict_types=1);
+include_once("vendor/autoload.php"); // No incluimos nada más
+use Dwes\ProyectoVideoclub\Videoclub;
 
 if (!isset($_SESSION)) {
     session_start();
@@ -10,6 +12,7 @@ if ($_SESSION["usuario"] != "admin") {
     die("Debes de ser administrador para acceder a este recurso. <a href='index.php'>Volver al login</a>");
 }
 
+$vc=$_SESSION["videoclub"];
 $vc->incluirJuego("God of War", 19.99, "PS4", 1, 1)
     ->incluirJuego("The Last of Us Part II", 49.99, "PS4", 1, 1)
     ->incluirDvd("Torrente", 4.5, "es", "16:9")
