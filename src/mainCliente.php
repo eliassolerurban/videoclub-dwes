@@ -8,7 +8,7 @@ if($_SESSION["usuario"] == "admin"){
     die("Tienes que ser un cliente para acceder a esta página. <a href='index.php'>Volver al login</a>");
 }
 
-//$_SESSION["alquileres"] = 
+//$_SESSION["id"] = $_SESSION["videoclub"]->getSocios()[]; 
 
 ?>
 
