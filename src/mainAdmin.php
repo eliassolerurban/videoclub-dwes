@@ -32,8 +32,8 @@ try {
     echo "Se ha producido un error: " . $e->getMessage();
 }
 
-$_SESSION["listaSocios"] = $vc->listarSocios();
-$_SESSION["listaProductos"] = $vc->listarProductos();
+$_SESSION["socios"] = $vc->getSocios();
+$_SESSION["productos"] = $vc->getProductos();
 
 
 ?>
@@ -56,9 +56,17 @@ $_SESSION["listaProductos"] = $vc->listarProductos();
         } ?>
     </h1>
     <h2>Lista de socios:</h2>
-    <?= $_SESSION["listaSocios"]?>
+    <ul>
+    <?php foreach($_SESSION["socios"] as $socio){ ?>    
+        <li><?= $socio->muestraResumen() ?></li>
+    <?php } ?>
+    </ul>
     <h2>Lista de productos:</h2>
-    <?= $_SESSION["listaProductos"]?>
+    <ul>
+    <?php foreach($_SESSION["productos"] as $producto){ ?>    
+        <li><?= $producto->muestraResumen() ?></li>
+    <?php } ?>
+    </ul>
     <a href="logout.php">Cerrar sesión</a>
 </body>
 

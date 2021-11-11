@@ -35,6 +35,15 @@ class Videoclub {
         $this->numTotalAlquileres = 0; 
     }
 
+    public function getProductos(){
+        return $this->productos;
+    }
+
+
+    public function getSocios(){
+        return $this->socios;
+    }
+
     public function getNumProductosAlquilados(){
         return $this->numProductosAlquilados;
     }
