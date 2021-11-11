@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 if (!isset($_SESSION)) {
     session_start();
-    echo "<br>se inicia la sesión";
 }
 
 if ($_SESSION["usuario"] != "admin") {
@@ -21,13 +20,10 @@ $vc->incluirJuego("God of War", 19.99, "PS4", 1, 1)
 
 if(!isset($_SESSION["socios"])){
     $_SESSION["socios"] = $vc->getSocios();
-    echo "<br>se setean socios";
 }
 
 if(!isset($_SESSION["productos"])){
     $_SESSION["productos"] = $vc->getProductos();
-    echo "<br>se setean productos";
-
 }
 
 
