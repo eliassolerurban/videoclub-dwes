@@ -61,6 +61,9 @@ if(!isset($_SESSION["productos"])){
         <li><?= $producto->muestraResumen() ?></li>
     <?php } ?>
     </ul>
+    <div>
+        <a href="formCreateCliente.php">Dar de alta a un cliente</a>
+    </div>
     <a href="logout.php">Cerrar sesión</a>
 </body>
 

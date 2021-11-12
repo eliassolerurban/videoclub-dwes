@@ -17,6 +17,11 @@ if(isset($_POST["usuario"])){
 
         if($usuario=="admin" and $password=="admin"){
             session_start();
+            $usuarios = [];
+            foreach($vc->getSocios() as $socio){
+                $usuarios[] = $socio->getUsuario();
+            }
+            $_SESSION["usuarios"] = $usuarios;
             $_SESSION["usuario"] = $usuario;
             $_SESSION["videoclub"] = $vc;
             header("Location: mainAdmin.php");    
