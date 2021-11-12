@@ -64,6 +64,9 @@ if(!isset($_SESSION["productos"])){
     <div>
         <a href="formCreateCliente.php">Dar de alta a un cliente</a>
     </div>
+    <div>
+        <a href="formUpdateCliente.php">Modificar un cliente</a>
+    </div>
     <a href="logout.php">Cerrar sesión</a>
 </body>
 

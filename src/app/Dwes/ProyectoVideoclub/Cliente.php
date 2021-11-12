@@ -28,6 +28,23 @@ class Cliente
         $this->numSoportesAlquilados = 0;
     }
 
+    
+    public function setMaxAlquilerConcurrente(int $maxAlquilerConcurrente){
+        $this->maxAlquilerConcurrente = $maxAlquilerConcurrente;
+    }
+    
+    public function setPassword(string $password){
+        $this->password = $password;
+    }
+
+    public function setNombre(string $nombre){
+        $this->nombre = $nombre;
+    }
+
+    public function setUsuario(string $usuario){
+        $this->usuario = $usuario;
+    }
+
     public function getUsuario(){
         return $this->usuario;
     }
@@ -60,6 +77,7 @@ class Cliente
     public function muestraResumen(): string {
         $cadena = "Nombre: " . $this->nombre;
         $cadena .= "<br>Usuario: " . $this->usuario;
+        $cadena .= "<br>Id: " . $this->numero;
         $cadena .= "<br>Número de alquileres: " . count($this->soportesAlquilados);
 
         return $cadena;
