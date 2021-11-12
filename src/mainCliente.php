@@ -1,4 +1,6 @@
 <?php declare(strict_types=1);
+include_once("vendor/autoload.php"); // No incluimos nada más
+use Dwes\ProyectoVideoclub\Cliente;
 
 if (!isset($_SESSION)) {
     session_start();
@@ -8,7 +10,10 @@ if($_SESSION["usuario"] == "admin"){
     die("Tienes que ser un cliente para acceder a esta página. <a href='index.php'>Volver al login</a>");
 }
 
-//$_SESSION["id"] = $_SESSION["videoclub"]->getSocios()[]; 
+if(isset($_SESSION["socio"])){
+    $socio = $_SESSION["socio"];
+    $alquileres = $socio->getAlquileres();
+}
 
 ?>
 
@@ -22,7 +27,11 @@ if($_SESSION["usuario"] == "admin"){
 </head>
 <body>
     <p>Bienvenido, <?= $_SESSION["usuario"] ?></p>
-
+    <ul>
+    <?php foreach($alquileres as $alquiler){ ?>
+            <li><?= $alquiler ?></li>
+    <?php } ?>
+    </ul>
     <a href="logout.php">Cerrar sesión</a>
 </body>
 </html>

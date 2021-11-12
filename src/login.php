@@ -27,6 +27,7 @@ if(isset($_POST["usuario"])){
                 if($socio->getUsuario() == $usuario and $socio->getPassword() == $password){
                     session_start();
                     $_SESSION["usuario"] = $usuario;
+                    $_SESSION["socio"] = $socio;
                     $_SESSION["videoclub"] = $vc;  
                     header("Location: mainCliente.php");
                 }
