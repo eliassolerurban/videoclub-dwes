@@ -51,8 +51,9 @@ if(!isset($_SESSION["productos"])){
     </h1>
     <h2>Lista de socios:</h2>
     <ul>
-    <?php foreach($_SESSION["socios"] as $socio){ ?>    
-        <li><?= $socio->muestraResumen() ?></li>
+    <?php foreach($_SESSION["socios"] as $socio){ ?>
+        <?php $id = $socio->getNumero()?>    
+        <li><?= $socio->muestraResumen() ?><a onclick="return confirm('¿Estás seguro de eliminar el usuario <?= $id ?> ?');" href="removeCliente.php?id=<?=$id ?>">Eliminar cliente</a></li>
     <?php } ?>
     </ul>
     <h2>Lista de productos:</h2>

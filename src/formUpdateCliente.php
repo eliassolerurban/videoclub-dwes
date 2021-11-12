@@ -1,4 +1,10 @@
-<?php declare(strict_types=1); 
+<?php declare(strict_types=1);
+
+if ($_SESSION["usuario"] != "admin") {
+    die("Debes de ser administrador para acceder a este recurso. <a href='index.php'>Volver al login</a>");
+}
+
+
 ?>
 
 <!DOCTYPE html>

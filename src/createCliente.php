@@ -44,7 +44,7 @@ if(isset($_POST)){
     
 }
 
-    $_SESSION["socios"][] = $cl;
+    $_SESSION["socios"][$numero] = $cl;
     $_SESSION["usuarios"][] = $usuario;
     
     header("Location: mainAdmin.php");
