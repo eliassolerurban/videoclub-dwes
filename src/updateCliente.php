@@ -28,9 +28,8 @@ if(isset($_POST)){
     
     $nombre = $_POST["nombre"];
     
-
-    if(!in_array($_POST["usuario"], $_SESSION["usuarios"])){
-        $usuario = $_POST["usuario"]; 
+    if(!in_array($_POST["user"], $_SESSION["usuarios"]) or $_POST["user"] == $cl->getUsuario()){
+        $usuario = $_POST["user"]; 
     }
     else{
         $error = "Error: el usuario no es único";

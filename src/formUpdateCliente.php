@@ -1,5 +1,10 @@
 <?php declare(strict_types=1);
 
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
 if ($_SESSION["usuario"] != "admin") {
     die("Debes de ser administrador para acceder a este recurso. <a href='index.php'>Volver al login</a>");
 }
@@ -27,8 +32,8 @@ if ($_SESSION["usuario"] != "admin") {
             <input type="text" name="nombre" id="nombre" required>
         </div>
         <div>
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" id="usuario" required>
+            <label for="user">Usuario:</label>
+            <input type="text" name="user" id="user" required>
         </div>
         <div>
             <label for="password">password:</label>
