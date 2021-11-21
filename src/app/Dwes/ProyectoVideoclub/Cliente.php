@@ -1,13 +1,14 @@
 <?php
 
 declare(strict_types=1);
-
 namespace Dwes\ProyectoVideoclub;
 
 use Dwes\ProyectoVideoclub\Cliente as ProyectoVideoclubCliente;
 use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
 use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
+use Monolog\Logger;
+
 
 class Cliente
 {
@@ -20,6 +21,7 @@ class Cliente
         private int $numero,
         private string $usuario,
         private string $password,
+        private Logger $log,
         private int $maxAlquilerConcurrente = 3
 
 

@@ -6,6 +6,7 @@ use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
 use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
 use Dwes\ProyectoVideoclub\Util\VideoclubException;
+use Monolog\Logger;
 use Exception;
 
 include_once("Juego.php");
@@ -79,8 +80,8 @@ class Videoclub {
 
     }
 
-    public function incluirSocio(string $nombre, string $usuario, string $password, int $maxAlquiler=3): Videoclub {
-        $c = new Cliente($nombre, $this->numSocios, $usuario, $password, $maxAlquiler);
+    public function incluirSocio(string $nombre, string $usuario, string $password, Logger $log, int $maxAlquiler=3): Videoclub {
+        $c = new Cliente($nombre, $this->numSocios, $usuario, $password, $log, $maxAlquiler);
         $this->socios[$c->getNumero()] = $c;
         $this->numSocios++;
         return $this;
