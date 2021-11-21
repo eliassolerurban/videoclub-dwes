@@ -6,7 +6,6 @@ use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
 use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
 use Dwes\ProyectoVideoclub\Util\VideoclubException;
-use Monolog\Logger;
 use Exception;
 
 include_once("Juego.php");

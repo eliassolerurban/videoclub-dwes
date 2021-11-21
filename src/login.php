@@ -1,5 +1,5 @@
 <?php declare(strict_types=1);
-include_once("vendor/autoload.php"); // No incluimos nada más
+include_once("vendor/autoload.php");
 use Dwes\ProyectoVideoclub\Videoclub;
 
 if(isset($_POST["usuario"])){
