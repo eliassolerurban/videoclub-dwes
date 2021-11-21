@@ -15,19 +15,20 @@ class Cliente
 
     public array $soportesAlquilados;
     private int $numSoportesAlquilados;
+    private Logger $log;
 
     public function __construct(
         public string $nombre,
         private int $numero,
         private string $usuario,
         private string $password,
-        private Logger $log,
-        private int $maxAlquilerConcurrente = 3
-
+        private int $maxAlquilerConcurrente = 3,
 
     ) {
         $this->soportesAlquilados = [];
         $this->numSoportesAlquilados = 0;
+        $this->log = new Logger("VideoclubLogger");
+        
     }
 
     
