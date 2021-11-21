@@ -4,4 +4,9 @@
 
 require_once __DIR__ . '/composer/autoload_real.php';
 
+spl_autoload_register( function($nombreClase) {
+    $nombreClase = str_replace("\\","/",$nombreClase);
+    include_once "app/" . $nombreClase . ".php";
+} );
+
 return ComposerAutoloaderInitda235a176d4c59d29715b5b79898251b::getLoader();
