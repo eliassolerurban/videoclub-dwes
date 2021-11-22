@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 include_once("vendor/autoload.php");
 use Dwes\ProyectoVideoclub\Videoclub;
+require 'vendor/autoload.php';
 
 if(isset($_POST["usuario"])){
     $usuario = $_POST["usuario"];

@@ -8,6 +8,8 @@
     },
     "scripts": {
         "test": "phpunit --testdox --colors tests"
-    }
-}
+    },
+    "autoload": {
+        "psr-4": {"Dwes\\": "app/Dwes"}
+    }}
 
