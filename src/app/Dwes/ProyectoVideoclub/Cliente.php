@@ -8,6 +8,7 @@ use Dwes\ProyectoVideoclub\Util\CupoSuperadoException;
 use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
 use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
 
 class Cliente
@@ -27,7 +28,9 @@ class Cliente
     ) {
         $this->soportesAlquilados = [];
         $this->numSoportesAlquilados = 0;
+        
         $this->log = new Logger("VideoclubLogger");
+        $this->log->pushHandler(new StreamHandler("logs/videoclub.log", Logger::DEBUG));
         
     }
 
@@ -83,6 +86,8 @@ class Cliente
         $cadena .= "<br>Id: " . $this->numero;
         $cadena .= "<br>Número de alquileres: " . count($this->soportesAlquilados);
 
+        $this->log->info(str_replace("<br>",", ",$cadena));
+
         return $cadena;
     }
     
@@ -95,20 +100,19 @@ class Cliente
     public function alquilar(Soporte $s): Cliente
     {
         if ($this->tieneAlquilado($s)) {
+            $this->log->warning("El cliente $this->numero ya tiene alquilado el soporte $s->titulo");
             throw new SoporteYaAlquiladoException("El cliente ya tiene alquilado el soporte <strong>$s->titulo</strong><br>");
         }
 
         if ($this->numSoportesAlquilados >= $this->maxAlquilerConcurrente) {
+            $this->log->warning("El cliente $this->numero ha superado su máximos de alquileres ($this->numSoportesAlquilados)");
             throw new CupoSuperadoException("El cliente tiene $this->numSoportesAlquilados elementos alquilados.<br>");
         }
 
         $this->soportesAlquilados[$s->getNumero()] = $s;
             $this->numSoportesAlquilados++;
-            echo "<br>";
-            echo "<br>";
-            echo "<strong>Alquilado soporte a: </strong> $this->nombre";
-            echo "<br>";
-            echo $s->muestraResumen();
+            $this->log->info("<strong>Alquilado soporte a: </strong> $this->nombre");
+            $this->log->info($s->muestraResumen());
 
             $s->setAlquilado(true);
 
@@ -124,8 +128,7 @@ class Cliente
 
         unset($this->soportesAlquilados[$numSoporte]);
         $this->numSoportesAlquilados--;
-        echo "<br>";
-        echo "El soporte se ha devueldo correctamente";
+        $this->log->info("El soporte se ha devueldo correctamente");
         
         $this->soportesAlquilados[$numSoporte]->setAlquilado(false);
         
@@ -141,6 +144,8 @@ class Cliente
             $cadena .= $soportesAlquilado->titulo;
         }
 
+        $this->log->info(str_replace("<br>","\n",$cadena));
+        
         return $cadena;
     }
 }

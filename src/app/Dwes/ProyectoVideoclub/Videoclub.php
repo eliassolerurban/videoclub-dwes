@@ -7,6 +7,8 @@ use Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException;
 use Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException;
 use Dwes\ProyectoVideoclub\Util\VideoclubException;
 use Exception;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
 include_once("Juego.php");
 include_once("Dvd.php");
@@ -21,6 +23,7 @@ class Videoclub {
     private int $numSocios;
     private int $numProductosAlquilados;
     private int $numTotalAlquileres;
+    private Logger $log;
 
     public function __construct(
         private string $nombre,
@@ -32,7 +35,10 @@ class Videoclub {
         $this->numSocios = 0;
 
         $this->numProductosAlquilados = 0; 
-        $this->numTotalAlquileres = 0; 
+        $this->numTotalAlquileres = 0;
+        
+        $this->log = new Logger("VideoclubLogger");
+        $this->log->pushHandler(new StreamHandler("logs/videoclub.log", Logger::DEBUG));
     }
 
     public function getProductos(){
@@ -93,6 +99,9 @@ class Videoclub {
             $cadena .= "<li>" . $producto->muestraResumen() . "</li>";
         }
         $cadena .= "</ol>";
+
+        $cadenaLog = str_replace("<ol>","[ ", str_replace("</ol>"," ]",str_replace("<li>", " ", str_replace("</li>",", ",$cadena))));
+        $this->log->info($cadenaLog);
         
         return $cadena;
     }
@@ -103,6 +112,9 @@ class Videoclub {
             $cadena .= "<li>" . $socio->muestraResumen() . "</li>";
         }
         $cadena .= "</ol>";
+
+        $cadenaLog = str_replace("<ol>","[ ", str_replace("</ol>"," ]",str_replace("<li>", " ", str_replace("</li>",", ",$cadena))));
+        $this->log->info($cadenaLog);
 
         return $cadena;
     }
@@ -117,24 +129,23 @@ class Videoclub {
                 
             }
             catch (SoporteNoEncontradoException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             } 
             catch (CupoSuperadoException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             }
             catch (SoporteYaAlquiladoException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             }
             catch (VideoclubException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             }
             catch (Exception $e){
-                echo "Alerta: " . $e->getMessage . "\n";
-
+                $this->log->warning( "Alerta: " . $e->getMessage());
             }
         }
         return $this;
@@ -143,6 +154,7 @@ class Videoclub {
     public function alquilarSocioProductos(int $numSocio, array $numerosProducto): Videoclub{        
         foreach ($numerosProducto as $numeroProducto) {
             if($this->productos[$numeroProducto]->getAlquilado()){
+                $this->log->warning("No puedes alquilar el pack de soportes porque ya tienes alquilado el soporte " . $this->productos[$numeroProducto]);
                 throw new SoporteYaAlquiladoException("No puedes alquilar el pack de soportes porque ya tienes alquilado el soporte " . $this->productos[$numeroProducto]);
             }
         }
@@ -163,23 +175,23 @@ class Videoclub {
                 
             }
             catch (SoporteNoEncontradoException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             } 
             catch (CupoSuperadoException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             }
             catch (SoporteYaAlquiladoException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             }
             catch (VideoclubException $e){
-                echo "Alerta: " . $e->getMessage() . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             }
             catch (Exception $e){
-                echo "Alerta: " . $e->getMessage . "\n";
+                $this->log->warning( "Alerta: " . $e->getMessage());
 
             }
         }
