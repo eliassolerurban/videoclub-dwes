@@ -101,7 +101,7 @@ class Videoclub {
         $cadena .= "</ol>";
 
         $cadenaLog = str_replace("<ol>","[ ", str_replace("</ol>"," ]",str_replace("<li>", " ", str_replace("</li>",", ",$cadena))));
-        $this->log->info($cadenaLog);
+        $this->log->info($cadenaLog, $this->productos);
         
         return $cadena;
     }
@@ -122,30 +122,30 @@ class Videoclub {
     public function alquilaSocioProducto(int $numeroCliente, int $numeroSoporte): Videoclub {
         if(isset($this->socios[$numeroCliente])){
             try {
-                $c = $this->socios[$numeroCliente];
-                $s = $this->productos[$numeroSoporte];
+                $cliente = $this->socios[$numeroCliente];
+                $soporte = $this->productos[$numeroSoporte];
 
-                $c->alquilar($s);
+                $cliente->alquilar($soporte);
                 
             }
             catch (SoporteNoEncontradoException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             } 
             catch (CupoSuperadoException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             }
             catch (SoporteYaAlquiladoException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             }
             catch (VideoclubException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             }
             catch (Exception $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
             }
         }
         return $this;
@@ -168,30 +168,30 @@ class Videoclub {
     public function devolverSocioProducto(int $numeroCliente, int $numeroProducto): Videoclub{
         if(isset($this->socios[$numeroCliente])){
             try {
-                $c = $this->socios[$numeroCliente];
-                $s = $this->productos[$numeroProducto];
+                $cliente = $this->socios[$numeroCliente];
+                $soporte = $this->productos[$numeroProducto];
 
-                $c->devolver($s);
+                $cliente->devolver($soporte);
                 
             }
             catch (SoporteNoEncontradoException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             } 
             catch (CupoSuperadoException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             }
             catch (SoporteYaAlquiladoException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             }
             catch (VideoclubException $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             }
             catch (Exception $e){
-                $this->log->warning( "Alerta: " . $e->getMessage());
+                $this->log->warning( "Alerta: " . $e->getMessage(), $cliente, $soporte);
 
             }
         }
