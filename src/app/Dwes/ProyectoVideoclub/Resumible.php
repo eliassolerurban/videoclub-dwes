@@ -8,6 +8,10 @@ namespace Dwes\ProyectoVideoclub;
 *@package Dwes\Videoclub\
 * @author Elías Soler <solerurban.elias@gmail.com>
 */
+
+/**
+* Este método será sobreescrito por la clase Soporte
+*/    
 interface Resumible{
     public function muestraResumen(): string;
 }
