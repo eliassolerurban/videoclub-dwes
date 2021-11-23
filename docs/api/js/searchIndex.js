@@ -183,12 +183,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Juego\u003A\u003AmuestraResumen\u0028\u0029",
             "name": "muestraResumen",
-            "summary": "Muestra\u0020los\u0020datos\u0020del\u0020soporte",
+            "summary": "Muestra\u0020los\u0020datos\u0020del\u0020juego,\u0020aplicando\u0020polimorfismo\u0020al\u0020m\u00E9todo\u0020de\u0020Soporte",
             "url": "classes/Dwes-ProyectoVideoclub-Juego.html#method_muestraResumen"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Juego\u003A\u003AmuestraJugadoresPosibles\u0028\u0029",
             "name": "muestraJugadoresPosibles",
-            "summary": "",
+            "summary": "Indica\u0020la\u0020cantidad\u0020de\u0020jugadores\u0020para\u0020el\u0020juego,\u0020devolviendo\u0020la\u0020cadena\u0020correspondiente",
             "url": "classes/Dwes-ProyectoVideoclub-Juego.html#method_muestraJugadoresPosibles"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Juego\u003A\u003A\u0024consola",
@@ -208,7 +208,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Resumible",
             "name": "Resumible",
-            "summary": "",
+            "summary": "Soporte\u0020implementar\u00E1\u0020esta\u0020interfaz\u0020y\u0020a\u0020su\u0020vez\u0020sus\u0020hijos\u0020lo\u0020har\u00E1n\u0020al\u0020heredar\u0020de\u0020\u00E9sta,\npor\u0020lo\u0020tanto\u0020no\u0020tendremos\u0020ni\u0020que\u0020hacer\u0020el\u0020include\u0020ni\u0020volver\u0020a\u0020escribir\u0020el\u0020implements\u0020en\u0020sus\u0020hijos",
             "url": "classes/Dwes-ProyectoVideoclub-Resumible.html"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Resumible\u003A\u003AmuestraResumen\u0028\u0029",
