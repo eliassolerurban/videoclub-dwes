@@ -21,7 +21,7 @@ class CintaVideo extends Soporte{
         float $precio,
   /**
   * Entero que indica la duración de la cinta en minutos
-  * @var int<duracion>
+  * @var duracion
   */
         private int $duracion
 

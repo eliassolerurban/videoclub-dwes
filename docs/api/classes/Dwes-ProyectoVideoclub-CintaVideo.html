@@ -104,7 +104,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Juego
+    CintaVideo
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Dwes-ProyectoVideoclub-Soporte.html"><abbr title="\Dwes\ProyectoVideoclub\Soporte">Soporte</abbr></a>
@@ -122,15 +122,15 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Juego.php"><a href="files/src-app-dwes-proyectovideoclub-juego.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Juego.php">Juego.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php"><a href="files/src-app-dwes-proyectovideoclub-cintavideo.html"><abbr title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php">CintaVideo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Clase que representa un juego.</p>
+            <p class="phpdocumentor-summary">Clase que representa una cinta de vídeo.</p>
 
-    <section class="phpdocumentor-description"><p>Los juegos son un tipo de soporte</p>
+    <section class="phpdocumentor-description"><p>Las cintas de vídeo son un tipo de soporte</p>
 </section>
 
 
@@ -162,13 +162,6 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Dwes-ProyectoVideoclub-Juego.html#property_consola">$consola</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>Cadena que indica la consola que soporta el juego</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Dwes-ProyectoVideoclub-Soporte.html#property_titulo">$titulo</a>
     <span>
                         &nbsp;: string            </span>
@@ -190,23 +183,16 @@
 <dd>Booleano que indica si el soporte está alquilado por un cliente</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#property_duracion">$duracion</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>Entero que indica la duración de la cinta en minutos</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Dwes-ProyectoVideoclub-Soporte.html#property_iva">$iva</a>
     <span>
                         &nbsp;: float            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Dwes-ProyectoVideoclub-Juego.html#property_maxJugadores">$maxJugadores</a>
-    <span>
-                        &nbsp;: int            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Dwes-ProyectoVideoclub-Juego.html#property_minJugadores">$minJugadores</a>
-    <span>
-                        &nbsp;: int            </span>
 </dt>
 <dd></dd>
 
@@ -218,7 +204,7 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Dwes-ProyectoVideoclub-Juego.html#method___construct">__construct()</a>
+    <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -246,18 +232,11 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Dwes-ProyectoVideoclub-Juego.html#method_muestraJugadoresPosibles">muestraJugadoresPosibles()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Dwes-ProyectoVideoclub-Juego.html#method_muestraResumen">muestraResumen()</a>
+    <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#method_muestraResumen">muestraResumen()</a>
     <span>
                                 &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr>    </span>
 </dt>
-<dd>Muestra los datos del soporte</dd>
+<dd>Muestra los datos de la cinta de vídeo, aplicando polimorfismo al método de Soporte</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Soporte.html#method_setAlquilado">setAlquilado()</a>
@@ -276,41 +255,8 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Dwes-ProyectoVideoclub-Juego.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_consola">
-        $consola
-        <a href="classes/Dwes-ProyectoVideoclub-Juego.html#property_consola" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Juego.php"><a href="files/src-app-dwes-proyectovideoclub-juego.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Juego.php">Juego.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">29</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Cadena que indica la consola que soporta el juego</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$consola</span>
-    </code>
-
-    
-    
-    
-
-</article>
                     <article
         class="
             phpdocumentor-element
@@ -417,6 +363,39 @@
             phpdocumentor-element
             -property
             -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_duracion">
+        $duracion
+        <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#property_duracion" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php"><a href="files/src-app-dwes-proyectovideoclub-cintavideo.html"><abbr title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php">CintaVideo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Entero que indica la duración de la cinta en minutos</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$duracion</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
             -static                                            "
 >
     <h4 class="phpdocumentor-element__name" id="property_iva">
@@ -438,74 +417,6 @@
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">float</span>
     <span class="phpdocumentor-signature__name">$iva</span>
      = <span class="phpdocumentor-signature__default-value">1.21</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_maxJugadores">
-        $maxJugadores
-        <a href="classes/Dwes-ProyectoVideoclub-Juego.html#property_maxJugadores" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Juego.php"><a href="files/src-app-dwes-proyectovideoclub-juego.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Juego.php">Juego.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">31</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$maxJugadores</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_minJugadores">
-        $minJugadores
-        <a href="classes/Dwes-ProyectoVideoclub-Juego.html#property_minJugadores" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Juego.php"><a href="files/src-app-dwes-proyectovideoclub-juego.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Juego.php">Juego.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">30</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$minJugadores</span>
-    </code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -553,7 +464,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Dwes-ProyectoVideoclub-Juego.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -563,19 +474,19 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Dwes-ProyectoVideoclub-Juego.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Juego.php"><a href="files/src-app-dwes-proyectovideoclub-juego.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Juego.php">Juego.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php"><a href="files/src-app-dwes-proyectovideoclub-cintavideo.html"><abbr title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php">CintaVideo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numero</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$consola</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$minJugadores</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxJugadores</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numero</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$duracion</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -606,23 +517,7 @@
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$consola</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$minJugadores</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$maxJugadores</span>
+                <span class="phpdocumentor-signature__argument__name">$duracion</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -744,51 +639,18 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_muestraJugadoresPosibles">
-        muestraJugadoresPosibles()
-        <a href="classes/Dwes-ProyectoVideoclub-Juego.html#method_muestraJugadoresPosibles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Juego.php"><a href="files/src-app-dwes-proyectovideoclub-juego.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Juego.php">Juego.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">muestraJugadoresPosibles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_muestraResumen">
         muestraResumen()
-        <a href="classes/Dwes-ProyectoVideoclub-Juego.html#method_muestraResumen" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#method_muestraResumen" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Juego.php"><a href="files/src-app-dwes-proyectovideoclub-juego.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Juego.php">Juego.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php"><a href="files/src-app-dwes-proyectovideoclub-cintavideo.html"><abbr title="src/app/Dwes/ProyectoVideoclub/CintaVideo.php">CintaVideo.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Muestra los datos del soporte</p>
+        <p class="phpdocumentor-summary">Muestra los datos de la cinta de vídeo, aplicando polimorfismo al método de Soporte</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -801,7 +663,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"><p>como resumen del soporte</p>
+            <section class="phpdocumentor-description"><p>como resumen de la cinta de vídeo</p>
 </section>
 
     
@@ -928,7 +790,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Dwes-ProyectoVideoclub-Juego.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Dwes-ProyectoVideoclub-CintaVideo.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

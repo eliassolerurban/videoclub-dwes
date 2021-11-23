@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
- __DIR__ ."/vendor/autoload.php";
- use Dwes\ProyectoVideoclub\Cliente;
+include __DIR__ ."/vendor/autoload.php";
+use Dwes\ProyectoVideoclub\Cliente;
 
 if(!isset($_SESSION)){
     session_start();

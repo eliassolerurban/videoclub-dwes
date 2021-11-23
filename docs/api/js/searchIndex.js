@@ -1,6 +1,26 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Dwes\\ProyectoVideoclub\\CintaVideo",
+            "name": "CintaVideo",
+            "summary": "Clase\u0020que\u0020representa\u0020una\u0020cinta\u0020de\u0020v\u00EDdeo.",
+            "url": "classes/Dwes-ProyectoVideoclub-CintaVideo.html"
+        },                {
+            "fqsen": "\\Dwes\\ProyectoVideoclub\\CintaVideo\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Dwes-ProyectoVideoclub-CintaVideo.html#method___construct"
+        },                {
+            "fqsen": "\\Dwes\\ProyectoVideoclub\\CintaVideo\u003A\u003AmuestraResumen\u0028\u0029",
+            "name": "muestraResumen",
+            "summary": "Muestra\u0020los\u0020datos\u0020de\u0020la\u0020cinta\u0020de\u0020v\u00EDdeo,\u0020aplicando\u0020polimorfismo\u0020al\u0020m\u00E9todo\u0020de\u0020Soporte",
+            "url": "classes/Dwes-ProyectoVideoclub-CintaVideo.html#method_muestraResumen"
+        },                {
+            "fqsen": "\\Dwes\\ProyectoVideoclub\\CintaVideo\u003A\u003A\u0024duracion",
+            "name": "duracion",
+            "summary": "Entero\u0020que\u0020indica\u0020la\u0020duraci\u00F3n\u0020de\u0020la\u0020cinta\u0020en\u0020minutos",
+            "url": "classes/Dwes-ProyectoVideoclub-CintaVideo.html#property_duracion"
+        },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Cliente",
             "name": "Cliente",
             "summary": "Clase\u0020que\u0020representa\u0020una\u0020cinta\u0020de\u0020v\u00EDdeo.",
@@ -128,7 +148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Dvd",
             "name": "Dvd",
-            "summary": "Clase\u0020que\u0020representa\u0020un\u0020soporte.",
+            "summary": "Clase\u0020que\u0020representa\u0020un\u0020DVD.",
             "url": "classes/Dwes-ProyectoVideoclub-Dvd.html"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Dvd\u003A\u003A__construct\u0028\u0029",
@@ -138,22 +158,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Dvd\u003A\u003AmuestraResumen\u0028\u0029",
             "name": "muestraResumen",
-            "summary": "Muestra\u0020los\u0020datos\u0020del\u0020soporte",
+            "summary": "Muestra\u0020los\u0020datos\u0020del\u0020DVD,\u0020aplicando\u0020polimorfismo\u0020al\u0020m\u00E9todo\u0020de\u0020Soporte",
             "url": "classes/Dwes-ProyectoVideoclub-Dvd.html#method_muestraResumen"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Dvd\u003A\u003A\u0024idiomas",
             "name": "idiomas",
-            "summary": "",
+            "summary": "Cadena\u0020que\u0020indica\u0020los\u0020idiomas\u0020disponibles\u0020en\u0020el\u0020DVD",
             "url": "classes/Dwes-ProyectoVideoclub-Dvd.html#property_idiomas"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Dvd\u003A\u003A\u0024formaPantalla",
             "name": "formaPantalla",
-            "summary": "",
+            "summary": "Cadena\u0020que\u0020indica\u0020las\u0020dimensiones\u0020de\u0020la\u0020pantalla",
             "url": "classes/Dwes-ProyectoVideoclub-Dvd.html#property_formaPantalla"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Juego",
             "name": "Juego",
-            "summary": "Clase\u0020que\u0020representa\u0020un\u0020soporte.",
+            "summary": "Clase\u0020que\u0020representa\u0020un\u0020juego.",
             "url": "classes/Dwes-ProyectoVideoclub-Juego.html"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Juego\u003A\u003A__construct\u0028\u0029",
@@ -173,7 +193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Juego\u003A\u003A\u0024consola",
             "name": "consola",
-            "summary": "",
+            "summary": "Cadena\u0020que\u0020indica\u0020la\u0020consola\u0020que\u0020soporta\u0020el\u0020juego",
             "url": "classes/Dwes-ProyectoVideoclub-Juego.html#property_consola"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Juego\u003A\u003A\u0024minJugadores",
