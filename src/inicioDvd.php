@@ -1,5 +1,5 @@
 <?php
-require '../vendor/autoload.php';
+include __DIR__ ."/vendor/autoload.php";
 use Dwes\ProyectoVideoclub\Dvd;
 
 

@@ -1,5 +1,5 @@
 <?php
-include_once("vendor/autoload.php"); // No incluimos nada más
+include __DIR__ ."/vendor/autoload.php";
 
 use Dwes\ProyectoVideoclub\Util\VideoclubException;
 use Dwes\ProyectoVideoclub\Videoclub;

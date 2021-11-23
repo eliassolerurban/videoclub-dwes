@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-include_once("vendor/autoload.php"); // No incluimos nada más
+include __DIR__ ."/vendor/autoload.php";
 use Dwes\ProyectoVideoclub\Videoclub;
 
 if (!isset($_SESSION)) {

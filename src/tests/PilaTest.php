@@ -1,6 +1,5 @@
 <?php
 use PHPUnit\Framework\TestCase;
-include_once("../vendor/autoload.php");
 
 class PilaTest extends TestCase
 {
