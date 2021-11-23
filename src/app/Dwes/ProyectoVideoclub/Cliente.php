@@ -11,6 +11,15 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
 
+/**
+* Clase que representa una cinta de vídeo.
+* 
+* Las cintas de vídeo son un tipo de soporte
+* 
+* @package Dwes\Videoclub\
+* @author Elías Soler <solerurban.elias@gmail.com>
+*/
+
 class Cliente
 {
 

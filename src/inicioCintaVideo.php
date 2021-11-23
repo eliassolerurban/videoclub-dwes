@@ -1,5 +1,5 @@
 <?php
-include __DIR__ ."/vendor/autoload.php";
+require "vendor/autoload.php";
 use Dwes\ProyectoVideoclub\CintaVideo;
 
 $miCinta = new CintaVideo("Los cazafantasmas", 23, 3.5, 107); 

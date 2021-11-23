@@ -1,5 +1,5 @@
 <?php
-include __DIR__ ."/vendor/autoload.php";
+require "vendor/autoload.php";
 use Dwes\ProyectoVideoclub\Soporte;
 
 //https://github.com/eliassolerurban/videoclub-dwes

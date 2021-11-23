@@ -37,6 +37,7 @@ class ComposerStaticInitda235a176d4c59d29715b5b79898251b
         ),
         'D' => 
         array (
+            'Dwes\\' => 5,
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
@@ -72,6 +73,10 @@ class ComposerStaticInitda235a176d4c59d29715b5b79898251b
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Dwes\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/Dwes',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

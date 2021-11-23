@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-include __DIR__ ."/vendor/autoload.php";
+require "vendor/autoload.php";
 use Dwes\ProyectoVideoclub\Videoclub;
 
 if (!isset($_SESSION)) {
