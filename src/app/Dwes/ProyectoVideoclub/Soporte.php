@@ -19,6 +19,10 @@ abstract class Soporte implements Resumible{
 
 
     public string $titulo, 
+  /**
+  * Número identidicador del soporte
+  * @var numero
+  */
     protected int $numero, 
     private float $precio, 
   /**
