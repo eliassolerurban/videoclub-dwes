@@ -135,7 +135,7 @@ class Cliente
 
     /**
     * Alquila el soporte recibido si no lo tiene alquilado y no ha superado su máximo de alquileres
-    * @param Soporte $soporte Soporte a alquilar
+    * @param s soporte a alquilar
     * @throws SoporteYaAlquiladoException en caso de tenerlo ya alquilado
     * @throws CupoSuperadoException en caso de haber superado su máximo de alquileres
     * @return this para poder encadenar operaciones
@@ -183,7 +183,11 @@ class Cliente
         
         return $this;
     }
-
+    
+    /**
+    * Lista los alquileres de este cliente
+    * @return cadena con los alquileres
+    */
     public function listarAlquileres(): string
     {
         $cadena= "$this->nombre cuenta con $this->numSoportesAlquilados alquileres";

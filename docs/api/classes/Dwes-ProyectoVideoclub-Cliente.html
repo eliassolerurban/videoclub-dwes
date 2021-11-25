@@ -233,9 +233,9 @@ homónimas.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Cliente.html#method_devolver">devolver()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Cliente.html"><abbr title="\Dwes\ProyectoVideoclub\Cliente">Cliente</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Devuelve el soporte recibido si lo tiene alquilado</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Cliente.html#method_getAlquileres">getAlquileres()</a>
@@ -275,9 +275,9 @@ homónimas.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Cliente.html#method_listarAlquileres">listarAlquileres()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Lista los alquileres de este cliente</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Cliente.html#method_muestraResumen">muestraResumen()</a>
@@ -775,17 +775,17 @@ homónimas.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Cliente.php"><a href="files/src-app-dwes-proyectovideoclub-cliente.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Cliente.php">Cliente.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">166</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Devuelve el soporte recibido si lo tiene alquilado</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">devolver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numSoporte</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Cliente.html"><abbr title="\Dwes\ProyectoVideoclub\Cliente">Cliente</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">devolver</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numSoporte</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -799,11 +799,29 @@ homónimas.</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-SoporteNoEncontradoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException">SoporteNoEncontradoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de no tenerlo alquilado</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Cliente.html"><abbr title="\Dwes\ProyectoVideoclub\Cliente">Cliente</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -984,24 +1002,26 @@ homónimas.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Cliente.php"><a href="files/src-app-dwes-proyectovideoclub-cliente.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Cliente.php">Cliente.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Lista los alquileres de este cliente</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">listarAlquileres</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">listarAlquileres</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>con los alquileres</p>
+</section>
+
     
 </article>
                     <article

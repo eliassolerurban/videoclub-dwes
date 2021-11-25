@@ -110,7 +110,8 @@
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Dwes.html">Dwes</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Dwes-Videoclub.html">Videoclub</a></li>
                             </ul>
         </div>
     
@@ -120,14 +121,33 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">Clase que representa un videoclub</p>
+
+    <section class="phpdocumentor-description"><p>El videoclub se encarga de almacenar los cluentes así como los soportes,
+además de funcionar como punto de encuentro entre los distintos tipos de soporte
+y los clientes, gestionando los alquileres y devoluciones.</p>
+</section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Elías Soler <a href="mailto:solerurban.elias@gmail.com">solerurban.elias@gmail.com</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -159,42 +179,42 @@
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd></dd>
+<dd>Entero que nos indica la cantidad de productos de los que dispone el videoclub</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#property_numProductosAlquilados">$numProductosAlquilados</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd></dd>
+<dd>Entero que nos indica la cantidad de productos alquilados por algún cliente</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#property_numSocios">$numSocios</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd></dd>
+<dd>Entero que nos indica la cantidad de productos de los que dispone el videoclub</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#property_numTotalAlquileres">$numTotalAlquileres</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd></dd>
+<dd>Entero que nos indica la cantidad de productos alquilados por algún cliente</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#property_productos">$productos</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
+<dd>Array que almacena los soportes disponibles</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#property_socios">$socios</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
+<dd>Array que almacena los clientes del videoclub</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method___construct">__construct()</a>
@@ -206,30 +226,32 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_alquilarSocioProductos">alquilarSocioProductos()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Alquila el pack de soportes recibido al cliente recibido si no tiene alquilado alguno
+de esos soportes alquilados</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_alquilaSocioProducto">alquilaSocioProducto()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Alquila el soporte recibido al cliente recibido si no lo tiene alquilado y el cliente no ha superado su máximo de alquileres</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_devolverSocioProducto">devolverSocioProducto()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>El cliente que corresponde al numeroCliente recibido devuelve el producto que corresponde al numeroSoporte recibido si lo tiene alquilado</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_devolverSocioProductos">devolverSocioProductos()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Devuelve el pack de soportes recibido al cliente recibido si tiene alquilado todos
+esos soportes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_getNumProductosAlquilados">getNumProductosAlquilados()</a>
@@ -262,51 +284,51 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirCintaVideo">incluirCintaVideo()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Incluye una cinta de vídeo que se crea a partir de los parámetros que se reciben</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirDvd">incluirDvd()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Incluye un DVD que se crea a partir de los parámetros que se reciben</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirJuego">incluirJuego()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Incluye un juego que se crea a partir de los parámetros que se reciben</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirSocio">incluirSocio()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Incluye un socio que se crea a partir de los parámetros que se reciben</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_listarProductos">listarProductos()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Lista los productos de este videoclub</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_listarSocios">listarSocios()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Lista los socios de este videoclub</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirProducto">incluirProducto()</a>
     <span>
-                                &nbsp;: <a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Dwes\ProyectoVideoclub\this">this</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Incluye el soporte recibido a la colección de productos del videoclub</dd>
 
         </dl>
 
@@ -336,7 +358,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -370,7 +392,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -404,21 +426,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Entero que nos indica la cantidad de productos de los que dispone el videoclub</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$numProductos</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -438,21 +459,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Entero que nos indica la cantidad de productos alquilados por algún cliente</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$numProductosAlquilados</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -472,21 +492,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Entero que nos indica la cantidad de productos de los que dispone el videoclub</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$numSocios</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -506,21 +525,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Entero que nos indica la cantidad de productos alquilados por algún cliente</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$numTotalAlquileres</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -540,21 +558,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Array que almacena los soportes disponibles</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$productos</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -574,21 +591,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Array que almacena los clientes del videoclub</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$socios</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -612,7 +628,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -656,17 +672,18 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Alquila el pack de soportes recibido al cliente recibido si no tiene alquilado alguno
+de esos soportes alquilados</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">alquilarSocioProductos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numSocio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numerosProducto</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">alquilarSocioProductos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numSocio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numerosProducto</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -688,11 +705,29 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-SoporteYaAlquiladoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException">SoporteYaAlquiladoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de tenerlo ya alquilado</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -708,17 +743,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Alquila el soporte recibido al cliente recibido si no lo tiene alquilado y el cliente no ha superado su máximo de alquileres</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">alquilaSocioProducto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroCliente</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroSoporte</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">alquilaSocioProducto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroCliente</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroSoporte</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -740,11 +775,69 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-SoporteNoEncontradoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException">SoporteNoEncontradoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso no encontrar el soporte en el videoclub</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-CupoSuperadoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\CupoSuperadoException">CupoSuperadoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de haber superado su máximo de alquileres</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-SoporteYaAlquiladoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException">SoporteYaAlquiladoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de tenerlo ya alquilado</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-VideoclubException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\VideoclubException">VideoclubException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de ser otra excepción de Videoclub</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de ser otra excepción</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -760,17 +853,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">El cliente que corresponde al numeroCliente recibido devuelve el producto que corresponde al numeroSoporte recibido si lo tiene alquilado</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">devolverSocioProducto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroCliente</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroProducto</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">devolverSocioProducto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroCliente</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numeroProducto</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -792,11 +885,69 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-SoporteNoEncontradoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException">SoporteNoEncontradoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso no encontrar el soporte en el videoclub</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-CupoSuperadoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\CupoSuperadoException">CupoSuperadoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de haber superado su máximo de alquileres</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-SoporteYaAlquiladoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\SoporteYaAlquiladoException">SoporteYaAlquiladoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de tenerlo ya alquilado</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-VideoclubException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\VideoclubException">VideoclubException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de ser otra excepción de Videoclub</p>
+</section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de ser otra excepción</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -812,17 +963,18 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">330</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Devuelve el pack de soportes recibido al cliente recibido si tiene alquilado todos
+esos soportes</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">devolverSocioProductos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numSocio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numerosProducto</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">devolverSocioProductos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numSocio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numerosProducto</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -844,11 +996,29 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Dwes-ProyectoVideoclub-Util-SoporteNoEncontradoException.html"><abbr title="\Dwes\ProyectoVideoclub\Util\SoporteNoEncontradoException">SoporteNoEncontradoException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>en caso de no tenerlo alquilado</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -864,7 +1034,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -897,7 +1067,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -930,7 +1100,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -963,7 +1133,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -996,17 +1166,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Incluye una cinta de vídeo que se crea a partir de los parámetros que se reciben</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">incluirCintaVideo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$duracion</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">incluirCintaVideo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$duracion</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1038,9 +1208,11 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -1056,17 +1228,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Incluye un DVD que se crea a partir de los parámetros que se reciben</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">incluirDvd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idiomas</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pantalla</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">incluirDvd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idiomas</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pantalla</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1106,9 +1278,11 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -1124,17 +1298,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Incluye un juego que se crea a partir de los parámetros que se reciben</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">incluirJuego</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$consola</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$minJ</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxJ</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">incluirJuego</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titulo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$precio</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$consola</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$minJ</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxJ</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1182,9 +1356,11 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -1200,17 +1376,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Incluye un socio que se crea a partir de los parámetros que se reciben</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">incluirSocio</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nombre</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$usuario</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxAlquiler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">incluirSocio</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nombre</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$usuario</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxAlquiler</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1250,9 +1426,11 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
                     <article
@@ -1268,24 +1446,26 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Lista los productos de este videoclub</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">listarProductos</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">listarProductos</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>con los productos</p>
+</section>
+
     
 </article>
                     <article
@@ -1301,24 +1481,26 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Lista los socios de este videoclub</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">listarSocios</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">listarSocios</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\cadena">cadena</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>con los socios</p>
+</section>
+
     
 </article>
                     <article
@@ -1334,17 +1516,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/app/Dwes/ProyectoVideoclub/Videoclub.php"><a href="files/src-app-dwes-proyectovideoclub-videoclub.html"><abbr title="src/app/Dwes/ProyectoVideoclub/Videoclub.php">Videoclub.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Incluye el soporte recibido a la colección de productos del videoclub</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">incluirProducto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Dwes-ProyectoVideoclub-Soporte.html"><abbr title="\Dwes\ProyectoVideoclub\Soporte">Soporte</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$s</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">incluirProducto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Dwes-ProyectoVideoclub-Soporte.html"><abbr title="\Dwes\ProyectoVideoclub\Soporte">Soporte</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$s</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1360,9 +1542,11 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Dwes-ProyectoVideoclub-Videoclub.html"><abbr title="\Dwes\ProyectoVideoclub\Videoclub">Videoclub</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Dwes\ProyectoVideoclub\this">this</abbr></span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>para poder encadenar operaciones</p>
+</section>
+
     
 </article>
             </section>

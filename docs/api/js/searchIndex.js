@@ -98,12 +98,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Cliente\u003A\u003Adevolver\u0028\u0029",
             "name": "devolver",
-            "summary": "",
+            "summary": "Devuelve\u0020el\u0020soporte\u0020recibido\u0020si\u0020lo\u0020tiene\u0020alquilado",
             "url": "classes/Dwes-ProyectoVideoclub-Cliente.html#method_devolver"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Cliente\u003A\u003AlistarAlquileres\u0028\u0029",
             "name": "listarAlquileres",
-            "summary": "",
+            "summary": "Lista\u0020los\u0020alquileres\u0020de\u0020este\u0020cliente",
             "url": "classes/Dwes-ProyectoVideoclub-Cliente.html#method_listarAlquileres"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Cliente\u003A\u003A\u0024soportesAlquilados",
@@ -298,7 +298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub",
             "name": "Videoclub",
-            "summary": "",
+            "summary": "Clase\u0020que\u0020representa\u0020un\u0020videoclub",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A__construct\u0028\u0029",
@@ -328,87 +328,87 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AincluirProducto\u0028\u0029",
             "name": "incluirProducto",
-            "summary": "",
+            "summary": "Incluye\u0020el\u0020soporte\u0020recibido\u0020a\u0020la\u0020colecci\u00F3n\u0020de\u0020productos\u0020del\u0020videoclub",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirProducto"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AincluirCintaVideo\u0028\u0029",
             "name": "incluirCintaVideo",
-            "summary": "",
+            "summary": "Incluye\u0020una\u0020cinta\u0020de\u0020v\u00EDdeo\u0020que\u0020se\u0020crea\u0020a\u0020partir\u0020de\u0020los\u0020par\u00E1metros\u0020que\u0020se\u0020reciben",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirCintaVideo"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AincluirDvd\u0028\u0029",
             "name": "incluirDvd",
-            "summary": "",
+            "summary": "Incluye\u0020un\u0020DVD\u0020que\u0020se\u0020crea\u0020a\u0020partir\u0020de\u0020los\u0020par\u00E1metros\u0020que\u0020se\u0020reciben",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirDvd"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AincluirJuego\u0028\u0029",
             "name": "incluirJuego",
-            "summary": "",
+            "summary": "Incluye\u0020un\u0020juego\u0020que\u0020se\u0020crea\u0020a\u0020partir\u0020de\u0020los\u0020par\u00E1metros\u0020que\u0020se\u0020reciben",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirJuego"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AincluirSocio\u0028\u0029",
             "name": "incluirSocio",
-            "summary": "",
+            "summary": "Incluye\u0020un\u0020socio\u0020que\u0020se\u0020crea\u0020a\u0020partir\u0020de\u0020los\u0020par\u00E1metros\u0020que\u0020se\u0020reciben",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_incluirSocio"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AlistarProductos\u0028\u0029",
             "name": "listarProductos",
-            "summary": "",
+            "summary": "Lista\u0020los\u0020productos\u0020de\u0020este\u0020videoclub",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_listarProductos"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AlistarSocios\u0028\u0029",
             "name": "listarSocios",
-            "summary": "",
+            "summary": "Lista\u0020los\u0020socios\u0020de\u0020este\u0020videoclub",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_listarSocios"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AalquilaSocioProducto\u0028\u0029",
             "name": "alquilaSocioProducto",
-            "summary": "",
+            "summary": "Alquila\u0020el\u0020soporte\u0020recibido\u0020al\u0020cliente\u0020recibido\u0020si\u0020no\u0020lo\u0020tiene\u0020alquilado\u0020y\u0020el\u0020cliente\u0020no\u0020ha\u0020superado\u0020su\u0020m\u00E1ximo\u0020de\u0020alquileres",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_alquilaSocioProducto"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AalquilarSocioProductos\u0028\u0029",
             "name": "alquilarSocioProductos",
-            "summary": "",
+            "summary": "Alquila\u0020el\u0020pack\u0020de\u0020soportes\u0020recibido\u0020al\u0020cliente\u0020recibido\u0020si\u0020no\u0020tiene\u0020alquilado\u0020alguno\nde\u0020esos\u0020soportes\u0020alquilados",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_alquilarSocioProductos"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AdevolverSocioProducto\u0028\u0029",
             "name": "devolverSocioProducto",
-            "summary": "",
+            "summary": "El\u0020cliente\u0020que\u0020corresponde\u0020al\u0020numeroCliente\u0020recibido\u0020devuelve\u0020el\u0020producto\u0020que\u0020corresponde\u0020al\u0020numeroSoporte\u0020recibido\u0020si\u0020lo\u0020tiene\u0020alquilado",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_devolverSocioProducto"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003AdevolverSocioProductos\u0028\u0029",
             "name": "devolverSocioProductos",
-            "summary": "",
+            "summary": "Devuelve\u0020el\u0020pack\u0020de\u0020soportes\u0020recibido\u0020al\u0020cliente\u0020recibido\u0020si\u0020tiene\u0020alquilado\u0020todos\nesos\u0020soportes",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#method_devolverSocioProductos"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A\u0024productos",
             "name": "productos",
-            "summary": "",
+            "summary": "Array\u0020que\u0020almacena\u0020los\u0020soportes\u0020disponibles",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#property_productos"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A\u0024numProductos",
             "name": "numProductos",
-            "summary": "",
+            "summary": "Entero\u0020que\u0020nos\u0020indica\u0020la\u0020cantidad\u0020de\u0020productos\u0020de\u0020los\u0020que\u0020dispone\u0020el\u0020videoclub",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#property_numProductos"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A\u0024socios",
             "name": "socios",
-            "summary": "",
+            "summary": "Array\u0020que\u0020almacena\u0020los\u0020clientes\u0020del\u0020videoclub",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#property_socios"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A\u0024numSocios",
             "name": "numSocios",
-            "summary": "",
+            "summary": "Entero\u0020que\u0020nos\u0020indica\u0020la\u0020cantidad\u0020de\u0020productos\u0020de\u0020los\u0020que\u0020dispone\u0020el\u0020videoclub",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#property_numSocios"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A\u0024numProductosAlquilados",
             "name": "numProductosAlquilados",
-            "summary": "",
+            "summary": "Entero\u0020que\u0020nos\u0020indica\u0020la\u0020cantidad\u0020de\u0020productos\u0020alquilados\u0020por\u0020alg\u00FAn\u0020cliente",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#property_numProductosAlquilados"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A\u0024numTotalAlquileres",
             "name": "numTotalAlquileres",
-            "summary": "",
+            "summary": "Entero\u0020que\u0020nos\u0020indica\u0020la\u0020cantidad\u0020de\u0020productos\u0020alquilados\u0020por\u0020alg\u00FAn\u0020cliente",
             "url": "classes/Dwes-ProyectoVideoclub-Videoclub.html#property_numTotalAlquileres"
         },                {
             "fqsen": "\\Dwes\\ProyectoVideoclub\\Videoclub\u003A\u003A\u0024log",
