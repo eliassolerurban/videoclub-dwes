@@ -16,10 +16,10 @@ echo "<br>El identificador del cliente 1 es: " . $cliente1->getNumero();
 echo "<br>El identificador del cliente 2 es: " . $cliente2->getNumero();
 
 //instancio algunos soportes 
-$soporte1 = new CintaVideo("Los cazafantasmas", 23, 3.5, 107);
-$soporte2 = new Juego("The Last of Us Part II", 26, 49.99, "PS4", 1, 1);  
-$soporte3 = new Dvd("Origen", 24, 15, "es,en,fr", "16:9");
-$soporte4 = new Dvd("El Imperio Contraataca", 4, 3, "es,en","16:9");
+$soporte1 = new CintaVideo("https://www.metacritic.com/movie/ghostbusters", "Los cazafantasmas", 23, 3.5, 107);
+$soporte2 = new Juego("https://www.metacritic.com/game/playstation-4/the-last-of-us-part-ii", "The Last of Us Part II", 26, 49.99, "PS4", 1, 1);  
+$soporte3 = new Dvd("https://www.metacritic.com/movie/inception", "Origen", 24, 15, "es,en,fr", "16:9");
+$soporte4 = new Dvd("https://www.metacritic.com/movie/star-wars-episode-v---the-empire-strikes-back", "El Imperio Contraataca", 4, 3, "es,en","16:9");
 
 try{
     //alquilo algunos soportes

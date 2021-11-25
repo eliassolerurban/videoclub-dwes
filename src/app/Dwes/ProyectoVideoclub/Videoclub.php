@@ -112,8 +112,8 @@ class Videoclub {
     * @return this para poder encadenar operaciones
     */
 
-    public function incluirCintaVideo(string $titulo, float $precio, int $duracion): Videoclub {
-        $c = new CintaVideo($titulo, $this->numProductos, $precio, $duracion);
+    public function incluirCintaVideo(string $metacritic, string $titulo, float $precio, int $duracion): Videoclub {
+        $c = new CintaVideo($metacritic, $titulo, $this->numProductos, $precio, $duracion);
         $this->incluirProducto($c);
         return $this;
     }
@@ -127,8 +127,8 @@ class Videoclub {
     * @return this para poder encadenar operaciones
     */
 
-    public function incluirDvd(string $titulo, float $precio, string $idiomas, string $pantalla): Videoclub {
-        $d = new Dvd($titulo, $this->numProductos, $precio, $idiomas, $pantalla);
+    public function incluirDvd(string $metacritic,string $titulo, float $precio, string $idiomas, string $pantalla): Videoclub {
+        $d = new Dvd($metacritic, $titulo, $this->numProductos, $precio, $idiomas, $pantalla);
         $this->incluirProducto($d);
         return $this;
 
@@ -144,8 +144,8 @@ class Videoclub {
     * @return this para poder encadenar operaciones
     */
 
-    public function incluirJuego(string $titulo, float $precio, string $consola, int $minJ, int $maxJ): Videoclub {
-        $j = new Juego($titulo, $this->numProductos, $precio, $consola, $minJ, $maxJ);
+    public function incluirJuego(string $metacritic, string $titulo, float $precio, string $consola, int $minJ, int $maxJ): Videoclub {
+        $j = new Juego($metacritic, $titulo, $this->numProductos, $precio, $consola, $minJ, $maxJ);
         $this->incluirProducto($j);
         return $this;
 

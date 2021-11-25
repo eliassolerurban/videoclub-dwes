@@ -22,7 +22,8 @@ abstract class Soporte implements Resumible{
   /**
   * Número identidicador del soporte
   * @var numero
-  */
+  */    
+    private string $metacritic,
     protected int $numero, 
     private float $precio, 
   /**

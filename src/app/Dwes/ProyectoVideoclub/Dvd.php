@@ -15,7 +15,8 @@ class Dvd extends Soporte{
 
 
     public function __construct(
-
+        
+        string $metacritic,
         string $titulo,
         int $numero,
         float $precio,
@@ -32,7 +33,7 @@ class Dvd extends Soporte{
     
     )
     {
-        parent::__construct($titulo, $numero, $precio);
+        parent::__construct($metacritic, $titulo, $numero, $precio);
     }
 
   /**
