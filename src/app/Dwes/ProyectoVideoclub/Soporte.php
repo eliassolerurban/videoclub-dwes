@@ -20,12 +20,12 @@ abstract class Soporte implements Resumible{
   public function __construct(
 
 
-    public string $titulo, 
+    private string $metacritic,
+    public string $titulo,     
   /**
   * Número identidicador del soporte
   * @var numero
-  */    
-    private string $metacritic,
+  */
     protected int $numero, 
     private float $precio, 
   /**
@@ -66,12 +66,13 @@ abstract class Soporte implements Resumible{
   public function getPuntuacion(): float{
     $httpClient = new \Goutte\Client();
     $response = $httpClient->request('GET', $this->metacritic);
-    $puntuacion = 0;
-    $response->filter('span [class^="metascore"]')->each(
-      function ($node) use (&$puntuacion){
-        $puntuacion = floatval($node->text());
-      }
-    );
+    // $puntuacion = 0;
+    $puntuacion = floatval($response->filter('span[class^="metascore"]')->text());
+    // $response->filter('span [class^="metascore"]')->each(
+    //   function ($node) use (&$puntuacion){
+    //     $puntuacion = floatval($node->text());
+    //   }
+    // );
     
     return $puntuacion;
   }
