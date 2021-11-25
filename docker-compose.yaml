@@ -7,7 +7,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: 'Videoclub-apache_php_composer-server'
+    container_name: 'apache_php_Videoclub'
     volumes:
       - ./.docker/apache/php.ini:/usr/local/etc/php/php.ini
       - ./.docker/apache/httpd.conf:/etc/apache2/conf-available/httpd.conf
