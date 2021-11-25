@@ -8,7 +8,8 @@
         "phpunit/phpunit": "^9"
     },
     "scripts": {
-        "test": "phpunit --testdox --colors tests"
+        "test": "phpunit --testdox --colors tests",
+        "coverage": "phpunit --coverage-html coverage --coverage-filter app tests"
     },
     "autoload": {
         "psr-4": {"Dwes\\": "app/Dwes"}
