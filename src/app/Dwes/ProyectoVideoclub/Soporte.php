@@ -66,13 +66,7 @@ abstract class Soporte implements Resumible{
   public function getPuntuacion(): float{
     $httpClient = new \Goutte\Client();
     $response = $httpClient->request('GET', $this->metacritic);
-    // $puntuacion = 0;
     $puntuacion = floatval($response->filter('span[class^="metascore"]')->text());
-    // $response->filter('span [class^="metascore"]')->each(
-    //   function ($node) use (&$puntuacion){
-    //     $puntuacion = floatval($node->text());
-    //   }
-    // );
     
     return $puntuacion;
   }
@@ -82,8 +76,8 @@ abstract class Soporte implements Resumible{
   * @return cadena como resumen del soporte
   */
   public function muestraResumen(): string{
-    $cadena = "<i>" . $this->titulo . "</i>";
-    $cadena .= $this->getPrecio() . "€ (IVA no incluido) <br>";
+    $cadena = $this->titulo."<br>";
+    $cadena .= $this->getPrecio() . " (IVA no incluido)<br>";
     
     return $cadena;
   } 

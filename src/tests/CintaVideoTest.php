@@ -6,13 +6,13 @@ use Dwes\ProyectoVideoclub\CintaVideo;
 class CintaVideoTest extends TestCase {
     public function testConstructor()
     {
-        $cinta = new CintaVideo("Los cazafantasmas", 23, 3.5, 107); 
+        $cinta = new CintaVideo("https://www.metacritic.com/movie/ghostbusters", "Los cazafantasmas", 23, 3.5, 107); 
         $this->assertSame( $cinta->getNumero(), 23);
     }
 
     public function testMuestraResumen()
     {
-        $cinta = new CintaVideo("Los cazafantasmas", 23, 3.5, 107);
+        $cinta = new CintaVideo("https://www.metacritic.com/movie/ghostbusters", "Los cazafantasmas", 23, 3.5, 107);
         $resultado = "<br>Película en VHS:";
         $resultado .= "<br>Los cazafantasmas<br>3.5 (IVA no incluido)";
         $resultado .= "<br>Duración: 107 minutos";
