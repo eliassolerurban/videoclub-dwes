@@ -3,6 +3,8 @@
 declare(strict_types=1);
 namespace Dwes\ProyectoVideoclub;
 include_once("Resumible.php");
+require 'vendor/autoload.php';
+
 /**
 * Clase que representa un soporte.
 * 
@@ -60,6 +62,19 @@ abstract class Soporte implements Resumible{
     return $this->numero;
 
   }
+
+  public function getPuntuacion(): float{
+    $httpClient = new \Goutte\Client();
+    $response = $httpClient->request('GET', $this->metacritic);
+    $puntuacion = 0;
+    $response->filter('span [class^="metascore"]')->each(
+      function ($node) use (&$puntuacion){
+        $puntuacion = floatval($node->text());
+      }
+    );
+    
+    return $puntuacion;
+  }
   
   /**
   * Muestra los datos del soporte
@@ -70,5 +85,5 @@ abstract class Soporte implements Resumible{
     $cadena .= $this->getPrecio() . "€ (IVA no incluido) <br>";
     
     return $cadena;
-  }
+  } 
 }

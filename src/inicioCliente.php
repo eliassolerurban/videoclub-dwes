@@ -44,3 +44,21 @@ try{
 catch(VideoclubException $e){
     echo "Hay un error: " . $e->getMessage();
 }
+
+foreach ($cliente1->getAlquileres() as $alquiler){
+    echo $alquiler->muestraResumen();
+    echo "Puntuación: " . $alquiler->getPuntuacion();
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+}
+
+
+foreach ($cliente2->getAlquileres() as $alquiler){
+    echo $alquiler->muestraResumen();
+    echo "Puntuación: " . $alquiler->getPuntuacion();
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+
+}
