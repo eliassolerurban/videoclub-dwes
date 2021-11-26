@@ -1,8 +1,8 @@
 <?php
 require "vendor/autoload.php";
 
-use Dwes\ProyectoVideoclub\Cliente;
 use Dwes\ProyectoVideoclub\CintaVideo;
+use Dwes\ProyectoVideoclub\Cliente;
 use Dwes\ProyectoVideoclub\Juego;
 use Dwes\ProyectoVideoclub\Dvd;
 use Dwes\ProyectoVideoclub\Util\VideoclubException;
